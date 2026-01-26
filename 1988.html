@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1988 - Het Rollertje van Madrid</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -24,6 +25,9 @@
                 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
                     <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/gzHCCPMxfsI" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <a href="momenten/1988/media.html" class="nav-link" style="color: var(--psv-red); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 5px;">
+                    <i class="fas fa-chevron-right"></i> Meer beeldmateriaal en supportersfoto's
+                </a>
             </div>
 
             <div class="section-box">
@@ -54,22 +58,61 @@
                         <div class="story-header-row">
                             <div class="story-content-left">
                                 <span class="story-tag tag-speler">De Hoofdrolspeler</span>
-                                <h4 class="story-title">Edward Linskens over zijn 'lelijke' parel</h4>
-                                <p class="story-teaser">"Ik raakte hem totaal verkeerd, maar dat maakte het Bernabéu wel stil."</p>
-                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-linskens', this)">
+                                <h4 class="story-title">Edward Linskels: "Nu zouden ze matchfixing roepen"</h4>
+                                <p class="story-teaser">"Hij kon er gewoon niet in. Het kón niet, maar ineens tilt de keeper dat linkerbeen op en rolt-ie nog een eeuw door"</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-linskels', this)">
                                     <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
                                 </div>
                             </div>
-                            <button id="btn-linskens" class="vote-btn-standard" onclick="voteAndSort('linskens')"><i class="fas fa-heart"></i> <span id="count-linskens">0</span> Magisch!</button>
+                            <button id="btn-linskels" class="vote-btn-standard" onclick="voteAndSort('linskels')"><i class="fas fa-heart"></i> <span id="count-linskels">0</span> Magisch!</button>
                         </div>
-                        <div id="story-linskens" class="story-accordion-content">
-                            <p>Linskens zelf is altijd nuchter gebleven over zijn doelpunt. "Het was de meest wonderschone lelijke goal uit mijn leven," aldus Linskens. De stilte die in het stadion viel is iets wat hem altijd is bijgebleven. Jaren later ontmoette hij keeper Buyo opnieuw voor een reportage van PSV Inside, waarbij de keeper toegaf dat het doelpunt hem nog jaren achtervolgde.</p>
+                        <div id="story-linskels" class="story-accordion-content">
+                            <p><strong>Edward Linskels blikt terug op de goal die alles veranderde</strong></p>
+                            
+                            <p>"Hij kon er gewoon niet in. Het kón niet, maar ineens tilt de keeper dat linkerbeen op en rolt-ie nog een eeuw door", blikt Linskels terug in gesprek met het Eindhovens Dagblad. "In mijn beleving raakte hij daarna het net niet eens. Nu zouden ze bij zoiets meteen van alle kanten roepen dat het matchfixing is", schatert hij.</p>
+
+                            <p>"Toen was het Real, nu gaat PSV dan naar Atlético. Wij redden het destijds met een 1-1 in Madrid en een 0-0 in het Philips Stadion. Van tevoren leek dat scenario me nu ook de enige manier voor PSV om te overleven. Het kan, als álles klopt en ook dan moet niemand denken dat zoiets makkelijk is", vervolgt de voormalige middenvelder, die tussen 1987 en 1996 het PSV-shirt droeg.</p>
+
+                            <p>"Ik had nog maar een jeugdcontract toen ik die goal in Madrid maakte. Vanuit de spelersgroep kwam toen het signaal dat ik daarvoor ook beloond moest worden en kreeg ik vijfduizend gulden. Dat zijn mooie dingen als je 12.000 gulden per jaar verdient. Voor het winnen van de Europa Cup heb ik toen nog zo'n bedrag gehad, geloof ik."</p>
+
+                            <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
+                                <strong>Bron:</strong> 
+                                <a href="https://www.voetbalprimeur.nl/nieuws/645919/psv-ontsnapte-nu-zouden-ze-bij-zoiets-meteen-roepen-dat-het-matchfixing-is-.html" target="_blank">VoetbalPrimeur (Maart 2016)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="story-item" data-votes="0" id="item-buyo">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-tegenstander">De Tegenstander</span>
+                                <h4 class="story-title">Francisco Buyo: "Het ziet er verschrikkelijk slecht uit"</h4>
+                                <p class="story-teaser">"Je stelt je in op een totaal ander schot en ineens maak je met je been een reflex"</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-buyo', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-buyo" class="vote-btn-standard" onclick="voteAndSort('buyo')"><i class="fas fa-heart"></i> <span id="count-buyo">0</span> Indrukwekkend!</button>
+                        </div>
+                        <div id="story-buyo" class="story-accordion-content">
+                            <p><strong>35 jaar later: De ontmoeting tussen Linskels en Buyo in Madrid</strong></p>
+
+                            <p>35 jaar na het legendarische moment kwam er een bijzondere ontmoeting tot stand. Rik Elfrink reisde af naar Madrid om Edward Linskels het Estadio Bernabéu te laten bezoeken en het gesprek met de toenmalige doelman, Francisco Buyo, aan te gaan.</p>
+
+                            <p>"Hoe is het in godsnaam mogelijk dat die bal erin ging, man? Wat deed je nou met dat been?", zegt Linskels tegen Buyo, die nog altijd baalt van de uitschakeling tegen PSV.</p>
+
+                            <p><strong>Buyo's reactie:</strong> "Je stelt je in op een totaal ander schot en ineens maak je met je been een reflex, omdat je dat bij een harde bal ook zo zou doen. Het ziet er verschrikkelijk slecht uit voor een keeper", klinkt het.</p>
+
+                            <p>Buyo gaat verder en spreekt over het gemiste Europa Cup I-trofee voor Real Madrid: "We hebben zoveel kansen gehad om in die tijd de eindwinst te pakken. Zes keer kampioen en nooit is het gelukt om hem te winnen. Het is treurig maar er is niks meer aan te veranderen."</p>
+
+                            <p>De ontmoeting was zeer speciaal voor beide mannen. Linskels vond het vooral interessant om te ervaren hoe het destijds voor Buyo was, dat die ene bal zo onder zijn been het doel in rolde. De connectie van beide spelers werd opgemerkt in de voetbalwereld – ook 35 jaar na dato wisten de Spaanse sportkranten er aandacht aan te besteden.</p>
+
+                            <p>Linskels zei daarover in het Eindhovels Dagblad: "Mooi dat er in de grote sportkranten hier ook veel aandacht was voor mijn goal. Ik heb vandaag de foto's gezien van Marca, waar ik nog groot in sta."</p>
+
                             <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
                                 <strong>Bronnen:</strong> 
-                                <a href="https://www.elfvoetbal.nl/Binnenland/32869/historisch-6-april-moment-het-rollertje-van-linskens" target="_blank">ELF Voetbal</a> | 
-                                <a href="https://www.ad.nl/sport/de-wonderschone-lelijke-goal-van-edward-linskens~a24de978/" target="_blank">AD.nl</a> | 
-                                <a href="https://www.psvinside.nl/nieuws/na-35-jaar-ontmoet-edward-linskens-doelman-buyo-in-bernabeu-ook-spaanse-kranten-halen-wonderdoelpunt-aan" target="_blank">PSV Inside</a> | 
-                                <a href="https://www.ed.nl/nederlands-voetbal/voormalig-psv-er-linskens-over-rollertje-in-madrid-het-bernabeu-stil-krijgen-dat-blijft-je-altijd-bij~acbf637e/" target="_blank">ED.nl</a>
+                                <a href="https://www.psvinside.nl/nieuws/na-35-jaar-ontmoet-edward-linskels-doelman-buyo-in-bernabeu-ook-spaanse-kranten-halen-wonderdoelpunt-aan" target="_blank">PSV Inside (Mei 2023)</a> & 
+                                <a href="https://www.ed.nl/" target="_blank">Eindhovels Dagblad (Mei 2023)</a>
                             </p>
                         </div>
                     </div>

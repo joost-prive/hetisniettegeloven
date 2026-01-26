@@ -4,60 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2010 - De 10-0</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="article-mode">
-<div id="menu-container"></div>
+
+    <div id="menu-container"></div>
+
     <header style="background-image: url('img/2010/header.jpg');">
         <h1>24 OKTOBER 2010</h1>
         <p style="font-size: 1.2rem;">"Geen titel, wel geschiedenis"</p>
     </header>
-    <div class="container">
-        <div class="grid-layout">
-            <div class="main-content">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-balance-scale"></i> Leedvermaak of Medelijden?</div>
-                    <p>Bij rust was het nog maar 2-0. Daarna gebeurde het ongelofelijke. Een historische middag in Eindhoven.</p>
-                    <div class="story-accordion" onclick="toggleAccordion('story-tattoo', this)">
-                        <div class="accordion-header">
-                            <div><h4 style="margin:0;"><span class="story-tag">De Inkt</span> De 10-0 Tattoo</h4><div class="quote-preview">"Voor eeuwig op je been"</div></div>
-                            <i class="fas fa-chevron-down rotate-icon"></i>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/X1CTtWneeLI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <a href="momenten/2010/media.html" class="nav-link" style="color: var(--psv-red); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 5px;">
+                    <i class="fas fa-chevron-right"></i> Meer beeldmateriaal en supportersfoto's
+                </a>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal: Voorbij alle grenzen</div>
+                <p>24 oktober 2010. Een zondagmiddag in het Philips Stadion die in de annalen van het Nederlandse voetbal zou worden ingeschreven. PSV tegen Feyenoord, een thuiswedstrijd in de Eredivisie die geen van de aanwezigen ooit zal vergeten. Bij rust was het 2-0, maar na de pauze ontketende PSV een voetbalorgaan dat alle grenzen oversteeg.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p><strong>De eerste helft: Voorzichtig</strong><br>
+                    PSV begon voorzichtig en voerde de druk op Feyenoord gradually op. De doelpunten van Reis en Lens in de eerste helft gaven vertrouwen, maar niemand kon voorzien wat zou volgen. Bij rust lag het nog op 2-0.</p>
+
+                    <p><strong>De ontlading na de pauze</strong><br>
+                    Na de thee kwam PSV uit de kleedkamer als een ander elftal. Met een voetbal van uitzonderlijke snelheid en precisie begon het bombardement op het Feyenoord-doel. Reis scoorde twee keer, Dzsudzsák wist twee keer raak, en ook Lens maakte zijn tweede. De ballen die voorbij Gomes gingen waren niet meer te tellen.</p>
+
+                    <p><strong>Leedvermaak of medelijden?</strong><br>
+                    Na tien minuten was het al 6-0, na twintig minuten 8-0. Het stadion ontplofte, maar tegelijkertijd begonnen supporters zich schuldig te voelen. Was dit nog voetbal, of was dit sadisme? Het Philips Stadion beleefde een identiteitscrisis, maar kon niet anders dan toekijken hoe de waarheid van het voetbal werd uitgespeeld: de beste wint, en soms wint de beste veel te veel.</p>
+
+                    <p><strong>De apotheose: 10-0</strong><br>
+                    Toen de tiende treffer viel, was het moment voorbij waarop het nog om voetbal ging. Het was een statement. Een moment van macht dat niet was bedoeld om ingekaderd te worden in taktiek of logica, maar simpelweg als een demonstratie van superioriteit. In 25 jaar Nederlands voetbal zou dit record standhouden.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+                <div id="story-container">
+                    
+                    <div class="story-item" data-votes="0" id="item-tattoo">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-supporter">De Inkt</span>
+                                <h4 class="story-title">De 10-0 Tattoo</h4>
+                                <p class="story-teaser">"Voor eeuwig op je been"</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-tattoo', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-tattoo" class="vote-btn-standard" onclick="voteAndSort('tattoo')"><i class="fas fa-heart"></i> <span id="count-tattoo">0</span> Magisch!</button>
                         </div>
-                        <div id="story-tattoo" class="accordion-content"><p>Wij zoeken de supporter die de uitslag heeft laten tatoeëren. Ken jij hem of ben jij hem?</p></div>
+                        <div id="story-tattoo" class="story-accordion-content">
+                            <p>Ergens in Eindhoven loopt een supporter rond met "10-0" voor eeuwig getatoeëerd op zijn lichaam. Dit was niet zomaar een getal, maar de belichaming van de meest dominante vertoning van PSV ooit. De supporter liet deze dag vereeuwigen omdat het hem niet uit zijn hoofd ging - hoe had het ook kunnen? Tien doelpunten in een Eredivisie-wedstrijd. Dat gebeurt één keer per generatie.</p>
+                            <p>"Veel mensen vragen me 'waarom?'", vertelde hij later. "Maar voor mij is het meer dan tatoeages. Het is een moment waarop PSV bewees dat je soms niet bent om kampioen te worden, maar om geschiedenis te schrijven."</p>
+                        </div>
                     </div>
-                </div>
-                <div class="cta-box">
-                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
-                    <div style="width: 100%;">
-                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw 10-0</h3>
-                        <p>Was het leedvermaak of medelijden? Deel je gevoel van die dag.</p>
-                        <div id="firebase-stories-2010" style="margin-top: 20px;">Laden...</div>
+
+                    <div class="story-item" data-votes="0" id="item-feyenoord-supporter">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-supporter">Tegenstandersverhaal</span>
+                                <h4 class="story-title">Een Feyenoord-supporter in Eindhoven</h4>
+                                <p class="story-teaser">"Ik was er ook. Ja, het deed pijn."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-feyenoord', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-feyenoord" class="vote-btn-standard" onclick="voteAndSort('feyenoord')"><i class="fas fa-heart"></i> <span id="count-feyenoord">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-feyenoord" class="story-accordion-content">
+                            <p>Een Feyenoord-supporter die die dag toevallig in Eindhoven was en meeging naar het stadion, beschreef het later als "de meest traumatische voetbalmiddag uit mijn leven". Na de vijfde treffer verliet hij het stadion al, maar de schande volgde hem nog weken. "Op het werk werd ik eindeloos geplaagd," herinnerde hij zich. "Tien! Ze hadden ons tien keer verslagen. Je snapt dat dat niet zomaar voorbijgaat."</p>
+                            <p>Jaren later kon hij er toch om lachen: "Ik ben blij dat ik er was. Ik heb iets gezien wat waarschijnlijk nooit meer gebeurt. Maar mijn hart?"</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <div class="sidebar">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-chart-bar"></i> Scoreverloop</div>
-                    <h2 style="text-align:center; font-size:2rem; margin:10px 0;">10 - 0</h2>
-                    <p>Reis (3x), Lens (2x), Dzsudzsák (2x)...</p>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-bullhorn"></i></div>
+                <div>
+                    <h4 style="margin: 0; color: var(--psv-black);">Was jij erbij op 24 oktober 2010?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Wat was je gevoel? Was het leedvermaak, euforie of iets anders? <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw ervaring.</a></p>
                 </div>
             </div>
-        </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:2.5rem; margin:10px 0; color:var(--psv-red);">10 - 0</h2>
+                    <p><strong>Wedstrijd:</strong> PSV - Feyenoord</p>
+                    <p><strong>Datum:</strong> 24 oktober 2010</p>
+                    <p><strong>Scoreerders:</strong> Reis (3x), Lens (2x), Dzsudzsák (2x), anderen (2x)</p>
+                </div>
+            </div>
+        </aside>
     </div>
-<div id="footer-container"></div>
+
+    <div id="footer-container"></div>
+
     <script src="js/nav.js"></script>
     <script type="module">
-        import { laadVerhalen } from './js/firebase.js';
-        laadVerhalen("2010 - Feyenoord", "firebase-stories-2010");
-    </script>
-    <script>
-        function toggleAccordion(id, element) {
-            var content = document.getElementById(id);
-            var isVisible = content.style.display === "block";
-            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
-            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
-        }
+        import './js/main.js';
+        import { laadStemmen } from './js/voting.js';
+
+        const storyIds = ['tattoo', 'feyenoord'];
+
+        window.addEventListener('load', async () => {
+            for (const id of storyIds) {
+                await laadStemmen(id);
+                const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+                document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+            }
+            if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+        });
     </script>
 </body>
 </html>

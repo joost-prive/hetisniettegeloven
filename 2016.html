@@ -4,60 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2016 - Victorie via de Vijverberg</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="article-mode">
-<div id="menu-container"></div>
+
+    <div id="menu-container"></div>
+
     <header style="background-image: url('img/2016/header.jpg');">
         <h1>8 MEI 2016</h1>
         <p style="font-size: 1.2rem;">"Bel Bryan Smeets!"</p>
     </header>
-    <div class="container">
-        <div class="grid-layout">
-            <div class="main-content">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-mobile-alt"></i> Haperende Telefoons in Zwolle</div>
-                    <p>Jetro Willems zei vooraf dat hij 99% vertrouwen had. Had jij dat ook?</p>
-                    <div class="story-accordion" onclick="toggleAccordion('story-smeets', this)">
-                        <div class="accordion-header">
-                            <div><h4 style="margin:0;"><span class="story-tag">De Held</span> Bryan Smeets</h4><div class="quote-preview">"De man die Ajax velde"</div></div>
-                            <i class="fas fa-chevron-down rotate-icon"></i>
-                        </div>
-                        <div id="story-smeets" class="accordion-content"><p>Hij scoorde de 1-1 voor De Graafschap en schonk PSV de titel. Een ode aan Bryan Smeets.</p></div>
-                    </div>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/V8AzoiLcW2A" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="cta-box">
-                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
-                    <div style="width: 100%;">
-                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw Ontlading</h3>
-                        <p>Hoe reageerde jij toen de 1-1 viel in Doetinchem?</p>
-                        <div id="firebase-stories-2016" style="margin-top: 20px;">Laden...</div>
-                    </div>
+                <a href="momenten/2016/media.html" class="nav-link" style="color: var(--psv-red); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 5px;">
+                    <i class="fas fa-chevron-right"></i> Meer beeldmateriaal en supportersfoto's
+                </a>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal: De Telefoons van Zwolle</div>
+                <p>8 mei 2016. Een woensdag die PSV-supporters niet zullen vergeten. De seizoenslotdag van de Eredivisie. PSV en Ajax stonden gelijk op punten, Ajax had zelfs een beter doelsaldo. Het enige wat PSV kon redden was winnen en hopen op hulp van buiten. Die hulp kwam van de meest onverwachte plek: De Graafschap tegen Ajax in Doetinchem.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p><strong>Verwachtingen en Vertrouwen</strong><br>
+                    Jetro Willems riep vooraf dat hij 99% vertrouwen had in de titel. Het was gedurfd, gezien Ajax op papier sterker leek. PSV moest thuis tegen FC Zwolle spelen - een belangrijke voorbereiding op wat zou kunnen volgen. Maar ondertussen speelden De Graafschap en Ajax in Doetinchem, en daar zou het ware drama zich afspelen.</p>
+
+                    <p><strong>De Spanning in Zwolle</strong><br>
+                    Het stadion in Eindhoven zat vol; iedereen wist dat de titel afhing van wat in Doetinchem zou gebeuren. Telefoons gingen over met berichten, transistorradio's werden aangezet. PSV wist wat het moest doen: winnen. Dat lukte. Maar het antwoord uit Doetinchem bleef spannend.</p>
+
+                    <p><strong>Bryan Smeets maakt het verschil</strong><br>
+                    Toen het nieuws kwam dat De Graafschap tegen Ajax aan het voetballen was zonder doelpunten, begon de spanning te groeien. Maar in Doetinchem gebeurde het ongelofelijke: De Graafschap maakte 1-1. Bryan Smeets, een speler van wie niemand meer had gehoord, tekende voor dat gelijkspel. Niet voor Ajax, niet voor prestige, maar voor PSV. Het was onbedoeld voetballen voor een ander doel, en Eindhoven ontplofte.</p>
+
+                    <p><strong>De Apotheose</strong><br>
+                    Toen duidelijk werd dat Ajax niet meer kon winnen, wist PSV dat het kampioen was. Wederom op één doelpunt verschil van Ajax, maar deze keer was PSV het geluksvogeltje. De telefoonen in Zwolle rinkelden van pure vreugde. Het was geen voetbalmeesterwerk, maar het was de titel die telde.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
                 </div>
             </div>
-            <div class="sidebar">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-chart-bar"></i> Feiten</div>
-                    <h2 style="text-align:center; font-size:2rem; margin:10px 0;">GRA 1 - 1 AJAX</h2>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+                <div id="story-container">
+                    
+                    <div class="story-item" data-votes="0" id="item-smeets">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-speler">De Held van Doetinchem</span>
+                                <h4 class="story-title">Bryan Smeets: "Ik gaf PSV de titel"</h4>
+                                <p class="story-teaser">"Ik wist niet eens dat mijn gelijkspel van zoveel belang was."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-smeets', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-smeets" class="vote-btn-standard" onclick="voteAndSort('smeets')"><i class="fas fa-heart"></i> <span id="count-smeets">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-smeets" class="story-accordion-content">
+                            <p>Bryan Smeets was geen wereldspeler. Na zijn carrière zou je hem zelfs bijna niet terugvinden in de voetbalgeschiedenis. Maar op 8 mei 2016 schonk hij PSV het kampioenschap. "Ik wist niet eens dat het zoveel zou betekenen," herinnert Smeets zich. "Voor mij was het gewoon een gelijkspel in een normale Eredivisie-wedstrijd. Maar de volgende dag werd ik een held in Eindhoven."</p>
+                            <p>Jaren later zou PSV hem uitnodigen voor een speciale erkenning. De man die per ongeluk campioen hielp maken.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-item" data-votes="0" id="item-telefoon">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-supporter">Steunerverhaal</span>
+                                <h4 class="story-title">De Telefoons van Zwolle</h4>
+                                <p class="story-teaser">"Iedereen belde iedereen om het nieuws te delen."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-telefoon', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-telefoon" class="vote-btn-standard" onclick="voteAndSort('telefoon')"><i class="fas fa-heart"></i> <span id="count-telefoon">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-telefoon" class="story-accordion-content">
+                            <p>Een supporter beschreef later hoe het voelde om in Zwolle te zijn toen het nieuws van Doetinchem binnenkwam: "Iedereen belde iedereen. Het was chaos en bedrijvigheid tegelijk. Mijn telefoon was gloeiend heet van al het delen van berichtjes. Toen het duidelijk werd dat Smeets voor die 1-1 had getekend, stonden we allemaal op te springen."</p>
+                            <p>"Het mooie was dat het niet eens PSV's verdienste was, maar gewoon voetbal," herinnerde hij zich. "Soms win je niet omdat je beter voetbalt, maar omdat het moment het wil. En 2016 was ons moment."</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-bullhorn"></i></div>
+                <div>
+                    <h4 style="margin: 0; color: var(--psv-black);">Waar was jij op 8 mei 2016?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Hoe reageerde jij toen de 1-1 in Doetinchem viel? Zat je in Zwolle of thuis achter je televisie? <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw herinnering.</a></p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:2.5rem; margin:10px 0; color:var(--psv-red);">GRA 1 - 1 AJAX</h2>
+                    <p><strong>Wedstrijd:</strong> FC Zwolle vs PSV (thuiswedstrijd)</p>
+                    <p><strong>Beslissing:</strong> De Graafschap - Ajax</p>
+                    <p><strong>Datum:</strong> 8 mei 2016</p>
                     <p><strong>Held:</strong> Bryan Smeets</p>
                 </div>
             </div>
-        </div>
+        </aside>
     </div>
-<div id="footer-container"></div>
+
+    <div id="footer-container"></div>
+
     <script src="js/nav.js"></script>
     <script type="module">
-        import { laadVerhalen } from './js/firebase.js';
-        laadVerhalen("2016 - De Graafschap", "firebase-stories-2016");
-    </script>
-    <script>
-        function toggleAccordion(id, element) {
-            var content = document.getElementById(id);
-            var isVisible = content.style.display === "block";
-            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
-            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
-        }
+        import './js/main.js';
+        import { laadStemmen } from './js/voting.js';
+
+        const storyIds = ['smeets', 'telefoon'];
+
+        window.addEventListener('load', async () => {
+            for (const id of storyIds) {
+                await laadStemmen(id);
+                const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+                document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+            }
+            if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+        });
     </script>
 </body>
 </html>
