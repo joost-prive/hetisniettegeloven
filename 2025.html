@@ -4,77 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025 - Remontada</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="article-mode">
-<div id="menu-container"></div>
+
+    <div id="menu-container"></div>
+
     <header style="background-image: url('img/2025/header.jpg');">
-        <h1>2025: REMONTADA</h1>
+        <h1>18 MEI 2025</h1>
         <p style="font-size: 1.2rem;">"Van Ramp naar Remontada"</p>
     </header>
-    <div class="container">
-        <div class="grid-layout">
-            <div class="main-content">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-history"></i> De Ontknoping</div>
-                    <p>Het meest recente hoofdstuk van onze clubgeschiedenis. Van 9 punten achterstand naar de titel.</p>
-                     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:4px; margin-top:15px; background:#000;">
-                        <div style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; flex-direction:column;">
-                             <i class="fas fa-play-circle" style="font-size:3rem; margin-bottom:10px;"></i>
-                             <span>Hoogtepunten PSV - Heracles (3-1)</span>
-                         </div>
-                    </div>
-                </div>
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-star"></i> De Verhalen van 2025</div>
-                    <div class="story-accordion" onclick="toggleAccordion('story-droomweek', this)">
-                        <div class="accordion-header">
-                            <div><h4 style="margin:0;"><span class="story-tag">De Wedstrijd</span> Joey Veerman & Luuk de Jong</h4><div class="quote-preview">"Mooier kan het niet: Droomweek"</div></div>
-                            <i class="fas fa-chevron-down rotate-icon"></i>
-                        </div>
-                        <div id="story-droomweek" class="accordion-content"><p>Een blij verraste Noa Lang noemde het vlak na afloop ‘een rollercoaster’. Joey Veerman kende naar eigen zeggen ‘een droomweek’.</p></div>
-                    </div>
-                    <div class="story-accordion" onclick="toggleAccordion('story-huldiging', this)">
-                        <div class="accordion-header">
-                            <div><h4 style="margin:0;"><span class="story-tag">De Huldiging</span> Platte kar & Stadhuisplein</h4><div class="quote-preview">"Dit maakt me heel trots"</div></div>
-                            <i class="fas fa-chevron-down rotate-icon"></i>
-                        </div>
-                        <div id="story-huldiging" class="accordion-content"><p>Op een stralend mooie en zonnige maandag vierde PSV het 26ste landskampioenschap. Nog intenser, nog blijer en nog opgewekter dan vorig jaar.</p></div>
-                    </div>
-                </div>
-                <div class="cta-box">
-                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
-                    <div style="width: 100%;">
-                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw Verhaal</h3>
-                        <p>Hoe heb jij dit seizoen beleefd? Deel jouw verhaal hieronder.</p>
-                        <div id="firebase-stories-2025" style="margin-top: 20px;">Laden...</div>
-                    </div>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="sidebar">
-                <div class="section-box">
-                    <div class="section-header"><i class="fas fa-chart-bar"></i> Feiten</div>
-                    <h2 style="text-align:center; font-size:2.5rem; margin:10px 0;">3 - 1</h2>
-                    <p><strong>Datum:</strong> 18 Mei 2025</p>
-                    <p><strong>Held:</strong> Het Collectief</p>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal: Het Meest Recente Kampioenschap</div>
+                <p>18 mei 2025. De meest recente kroon op het PSV-avontuur. Met nog 5 speeldagen te gaan stond PSV negen punten achter. Iedereen had het opgegeven. Maar voetbal is niet wiskunde; het is ook geloof, wil en collectieve kracht. Wat volgde was een remontada die de geschiedenis in zou gaan.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p><strong>De Wanhoop: 9 Punten Achter</strong><br>
+                    Halverwege april zag het zwart. AZ en Ajax leken onklopbaar. PSV leek tot straf veroordeeld voor mislukkingen eerder in het seizoen. De fans waren voorbij hoop; trainers begonnen al over volgende seizoen te praten. Negen punten, vijf speeldagen. Wiskundig was het voorbij.</p>
+
+                    <p><strong>De Eerste Bliksemslag</strong><br>
+                    Maar toen begon het. Een overwinning hier, een misstap van de tegenstander daar. Langzaam begon het gat kleiner te worden. Met drie speeldagen te gaan was het plots open strijd. Het Philips Stadion rook blusvuur en hoop. Supportersgroepen ontmoetten elkaar in de stad; iedereen voelde dat iets onmogelijks kon gebeuren.</p>
+
+                    <p><strong>De Apotheose: Meisje, Jongen en Voetbal</strong><br>
+                    Op speeldag 32 verloor Ajax pijnlijk. PSV won. Op speeldag 33 was het nog strakker. En op speeldag 34 gebeurde het: PSV denderde over Heracles heen met 3-1. De doelpunten vielen als vanzelf. Joey Veerman, Malik Tillman, Luuk de Jong - het hele team voelde het. De titel was binnen handbereik.</p>
+
+                    <p><strong>Het Moment: 18 mei 2025</strong><br>
+                    Speeldag 35, de laatste. PSV won op eigen bodem; Ajax kon niet volgen. Toen het fluitsignaal klonk, wisten ze het: 26ste landskampioenschap. Het was niet de mooiste weg, niet de snelste, maar het was de meest emotionele. Van totale wanhoop naar absolute euforie in vijf speeldagen. Dat is PSV: onmogelijk tot je wint.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
                 </div>
             </div>
-        </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+                <div id="story-container">
+                    
+                    <div class="story-item" data-votes="0" id="item-veerman">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-speler">De Kapitein</span>
+                                <h4 class="story-title">Joey Veerman: "Een Droomweek"</h4>
+                                <p class="story-teaser">"Mooier kan het niet: dit is mijn droomweek."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-veerman', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-veerman" class="vote-btn-standard" onclick="voteAndSort('veerman')"><i class="fas fa-heart"></i> <span id="count-veerman">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-veerman" class="story-accordion-content">
+                            <p>Joey Veerman was de hartslag van PSV in deze remontada. Als aanvoerder voelde hij de druk van elke speeldag, de spanning in het dorp, de verwachtingen die groeidden naarmate het einde naderde. "Dit is mijn droomweek," zei hij na de titel. "Van totale wanhoop naar kampioensfeest. Je kan niet meer willen."</p>
+                            <p>Veerman was degene die in de kleedkamer de hoop levend hield als anderen al twijfelden. De voetballer die op het juiste moment raak schoot, de aanvoerder die niet naar voorbijgangers luisterde maar naar de collectieve wil van het team.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-item" data-votes="0" id="item-supporter">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-supporter">Supportersverhaal</span>
+                                <h4 class="story-title">Supporter in Nood: "Ik Geloofde het Niet Meer"</h4>
+                                <p class="story-teaser">"Tot vorige week dacht ik: dit wordt Ajax. Toen geloofde ik opeens weer."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-supporter', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-supporter" class="vote-btn-standard" onclick="voteAndSort('supporter')"><i class="fas fa-heart"></i> <span id="count-supporter">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-supporter" class="story-accordion-content">
+                            <p>Een supporter beschreef de voorbije maanden: "Met negen punten achter, vijf wedstrijden te gaan - dat is voorbij. Je zegt het tegen jezelf, je accepteert het. Tot Ajax een stommiteit begaat en dan denk je: wacht even... PSV wint gewoon. En dan wins PSV weer. En dan..."</p>
+                            <p>"Tegen speeldag 34 durfde ik het bijna niet te hopen. Maar toen zag ik het in de ogen van mijn vrienden op het stadion: iedereen geloofde het opeens. Die energie, die hoop die terug was - je kan dat niet kopen. Dat is het mooie van voetbal."</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-bullhorn"></i></div>
+                <div>
+                    <h4 style="margin: 0; color: var(--psv-black);">Wat voelde jij tijdens de Remontada?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Wanneer geloofde jij er weer in? Waar zat je tijdens de hele spanning? <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw ervaring van 2025.</a></p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:2.5rem; margin:10px 0; color:var(--psv-red);">3 - 1</h2>
+                    <p><strong>Wedstrijd:</strong> PSV - Heracles</p>
+                    <p><strong>Datum:</strong> 18 mei 2025</p>
+                    <p><strong>Kampioenschap:</strong> 26ste titel</p>
+                    <p><strong>Achterstand:</strong> Van 9 punten naar titel</p>
+                </div>
+            </div>
+        </aside>
     </div>
-<div id="footer-container"></div>
+
+    <div id="footer-container"></div>
+
     <script src="js/nav.js"></script>
     <script type="module">
-        import { laadVerhalen } from './js/firebase.js';
-        laadVerhalen("2025 - Remontada", "firebase-stories-2025");
-    </script>
-    <script>
-        function toggleAccordion(id, element) {
-            var content = document.getElementById(id);
-            var isVisible = content.style.display === "block";
-            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
-            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
-        }
+        import './js/main.js';
+        import { laadStemmen } from './js/voting.js';
+
+        const storyIds = ['veerman', 'supporter'];
+
+        window.addEventListener('load', async () => {
+            for (const id of storyIds) {
+                await laadStemmen(id);
+                const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+                document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+            }
+            if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+        });
     </script>
 </body>
 </html>
