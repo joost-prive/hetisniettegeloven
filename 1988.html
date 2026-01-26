@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1988 - Het Rollertje van Madrid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+
+    <div id="menu-container"></div>
+
+    <header style="background-image: url('img/1988/header.jpg');">
+        <h1>6 APRIL 1988</h1>
+        <p style="font-size: 1.2rem;">"Het Bernabéu stil krijgen, dat blijft je altijd bij"</p>
+    </header>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/gzHCCPMxfsI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal: Het Rollertje van Linskens</div>
+                <p>6 april 1988. De dag dat PSV de weg plaveide naar de grootste triomf in de clubgeschiedenis. In de halve finale van de Europa Cup I stond de loodzware uitwedstrijd tegen Real Madrid op het programma. In een kolkend Estadio Santiago Bernabéu gebeurde het onwaarschijnlijke: een jonge middenvelder die pas net kwam kijken, kreeg de hele wereld stil met één enkel doelpunt.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p><strong>De verrassing van Hiddink</strong><br>
+                    Guus Hiddink koos voor een gedurfde tactiek door de 20-jarige Edward Linskens in de basis te zetten. Het was een gok die niemand zag aankomen. PSV begon gegroepeerd en hield dapper stand tegen de aanvalsgolven van de 'Koninklijke', die dat seizoen thuis nagenoeg onverslaanbaar waren.</p>
+
+                    <p><strong>De goal die de wereld verbaasde</strong><br>
+                    In de 19e minuut viel de beslissing. Na een aanval van PSV belandde de bal voor de voeten van Linskens. Hij raakte de bal niet vol, waardoor er een zacht, bijna sukkelig schot ontstond. De bal rolde tergend langzaam richting het doel. Real-keeper Francisco Buyo was volledig uit balans en zag tot zijn eigen afschuw hoe het 'rollertje' via zijn vingertoppen en de binnenkant van de paal over de doellijn hobbelde.</p>
+
+                    <p><strong>De basis voor de Cup</strong><br>
+                    Real Madrid kwam nog wel op 1-1 via een penalty van Hugo Sánchez, maar het kostbare uitdoelpunt was goud waard. PSV hield stand en nam het resultaat mee naar Eindhoven, waar de 0-0 in de return genoeg was voor de finale. Het rollertje van Linskens bleek achteraf de belangrijkste treffer in de succesvolste campagne die de club ooit heeft gekend.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees de volledige reconstructie
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+                <div id="story-container">
+                    
+                    <div class="story-item" data-votes="0" id="item-linskens">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-speler">De Hoofdrolspeler</span>
+                                <h4 class="story-title">Edward Linskens over zijn 'lelijke' parel</h4>
+                                <p class="story-teaser">"Ik raakte hem totaal verkeerd, maar dat maakte het Bernabéu wel stil."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-linskens', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-linskens" class="vote-btn-standard" onclick="voteAndSort('linskens')"><i class="fas fa-heart"></i> <span id="count-linskens">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-linskens" class="story-accordion-content">
+                            <p>Linskens zelf is altijd nuchter gebleven over zijn doelpunt. "Het was de meest wonderschone lelijke goal uit mijn leven," aldus Linskens. De stilte die in het stadion viel is iets wat hem altijd is bijgebleven. Jaren later ontmoette hij keeper Buyo opnieuw voor een reportage van PSV Inside, waarbij de keeper toegaf dat het doelpunt hem nog jaren achtervolgde.</p>
+                            <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
+                                <strong>Bronnen:</strong> 
+                                <a href="https://www.elfvoetbal.nl/Binnenland/32869/historisch-6-april-moment-het-rollertje-van-linskens" target="_blank">ELF Voetbal</a> | 
+                                <a href="https://www.ad.nl/sport/de-wonderschone-lelijke-goal-van-edward-linskens~a24de978/" target="_blank">AD.nl</a> | 
+                                <a href="https://www.psvinside.nl/nieuws/na-35-jaar-ontmoet-edward-linskens-doelman-buyo-in-bernabeu-ook-spaanse-kranten-halen-wonderdoelpunt-aan" target="_blank">PSV Inside</a> | 
+                                <a href="https://www.ed.nl/nederlands-voetbal/voormalig-psv-er-linskens-over-rollertje-in-madrid-het-bernabeu-stil-krijgen-dat-blijft-je-altijd-bij~acbf637e/" target="_blank">ED.nl</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-bullhorn"></i></div>
+                <div>
+                    <h4 style="margin: 0; color: var(--psv-black);">Was jij erbij in Madrid?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Wij zoeken supporters die erbij waren in Madrid of het volledige Europese avontuur van 1988 hebben meegemaakt. <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel jouw verhaal!</a></p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:2.5rem; margin:10px 0; color:var(--psv-red);">1 - 1</h2>
+                    <p><strong>Wedstrijd:</strong> Real Madrid - PSV</p>
+                    <p><strong>Datum:</strong> 6 april 1988</p>
+                    <p><strong>Held:</strong> Edward Linskens</p>
+                </div>
+            </div>
+
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-info-circle"></i> Wist je dat?</div>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>Linskens kreeg door dit doelpunt de bijnaam "Edward Real Linskens."</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>Kamergenoot Willy van de Kerkhof wist al eerder dat Linskens zou spelen, maar hield het stil voor Edwards nachtrust.</span>
+                    </li>
+                    <li style="font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>Edward Linskens werkt tegenwoordig als aanspreekpunt bij uitvaartverzekeraar DELA.</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/nav.js"></script>
+    <script type="module">
+        import './js/main.js';
+        import { laadStemmen } from './js/voting.js';
+
+        const storyIds = ['linskens'];
+
+        window.addEventListener('load', async () => {
+            for (const id of storyIds) {
+                await laadStemmen(id);
+                const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+                document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+            }
+            if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+        });
+    </script>
+</body>
+</html>

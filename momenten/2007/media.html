@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media & Beelden - 2007 - PSV Geschiedenis</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .photo-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .photo-item:hover { transform: scale(1.03); }
+        .photo-item img { width: 100%; height: 200px; object-fit: cover; display: block; }
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            width: 100%;
+            padding: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="article-mode">
+
+    <div id="menu-container"></div>
+
+    <header style="background-image: url('../../img/2007/header.jpg');">
+        <h1>2007: BEELD & GELUID</h1>
+        <p style="font-size: 1.1rem;">Beleef de ontknoping opnieuw via video en supportersfoto's</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section-box">
+            <div class="section-header"><i class="fas fa-video"></i> Video Archief</div>
+            <p>De hoogtepunten, de reacties en de sfeerbeelden van 29 april 2007.</p>
+            
+            <div class="media-grid">
+                <div class="video-item">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 style="margin-top:10px;">Samenvatting PSV - Vitesse</h4>
+                </div>
+                <div class="video-item">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/XXXXXXX" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 style="margin-top:10px;">De ontlading in de stad</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <div class="section-header"><i class="fas fa-camera"></i> Foto's van Supporters</div>
+            <p>Ingezonden herinneringen van supporters die erbij waren.</p>
+            
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="../../img/2007/sfeer-1.jpg" alt="Sfeerbeeld 1">
+                    <div class="photo-caption">Ingezonden door: Mark</div>
+                </div>
+                <div class="photo-item">
+                    <img src="../../img/2007/sfeer-2.jpg" alt="Sfeerbeeld 2">
+                    <div class="photo-caption">Huldiging Stadhuisplein</div>
+                </div>
+                <div class="photo-item">
+                    <img src="../../img/2007/sfeer-3.jpg" alt="Sfeerbeeld 3">
+                    <div class="photo-caption">Vak T op zijn kop</div>
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:30px;">
+                <div class="cta-icon"><i class="fas fa-upload"></i></div>
+                <div>
+                    <h4>Heb jij nog foto's?</h4>
+                    <p>Deel je eigen beelden en ze verschijnen in deze galerij. <a href="../../index.html#meedoen" style="color:var(--psv-red); font-weight:bold;">Stuur ze hier in.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top:20px;">
+            <a href="../../2007.html" class="btn-cta" style="background:#666;"><i class="fas fa-arrow-left"></i> Terug naar het overzicht</a>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="../../js/nav.js"></script>
+</body>
+</html>

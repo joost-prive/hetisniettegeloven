@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In The Dying Seconds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+
+    <div id="menu-container"></div>
+
+    <header style="background-image: url('img/dying-seconds/header.jpg');">
+        <h1>IN THE DYING SECONDS</h1>
+        <p style="font-size: 1.2rem;">"Van de Hel naar de Hemel in één seconde"</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-layout">
+            <div class="main-content">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-stopwatch"></i> De Ontsnappingen</div>
+                    <p>Soms zijn kampioenschappen mooi, maar niets verslaat de pure adrenaline van een winnende goal in de slotseconde. Wij hebben de meest legendarische momenten op een rij gezet, elk met hun eigen unieke verhaal.</p>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-feyenoord', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">De Whiplash</span> PSV - Feyenoord <span class="time-badge">90+3'</span></h4>
+                            <div class="quote-preview">"Het moment dat je TV uit het raam wil gooien, maar hem toch knuffelt"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-feyenoord" class="accordion-content">
+                        <p><strong>Datum:</strong> 17 december 2014 | <strong>Uitslag:</strong> 4-3</p>
+                        <p>Dit is het verhaal van de emotionele whiplash. In de 89e minuut leek de wereld te vergaan toen Elvis Manu de 3-3 maakte voor Feyenoord. De titelstrijd lag weer open, het stadion viel stil, supporters vloekten hardop.</p>
+                        <p>Maar voor je adem kon halen, voor je de teleurstelling überhaupt kon verwerken, lag de bal er aan de andere kant alweer in. Memphis Depay. 4-3. Van de diepste hel naar de zevende hemel in nog geen zestig seconden. Wie hierbij was, heeft waarschijnlijk nog steeds hartkloppingen.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-feyenoord" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-feyenoord">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-comebacks', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">De Spijtoptanten</span> Sevilla & Sjachtar <span class="time-badge">90+5'</span></h4>
+                            <div class="quote-preview">"Voor iedereen die de TV al had uitgezet..."</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-comebacks" class="accordion-content">
+                        <p><strong>Sevilla (2-3) & Sjachtar (3-2)</strong></p>
+                        <p>Er is een speciaal soort schaamte onder supporters: de schaamte van de "vroegtijdige afhaker". Bij de uitwedstrijd tegen Sevilla (2023) en de thuiswedstrijd tegen Sjachtar (2024) gebeurde hetzelfde. We stonden 0-2 achter. Het spel was niet om aan te zien.</p>
+                        <p>Velen liepen al naar de parkeerplaats of zapten weg. En toen begon het. De Remontada. Pepi, Tillman, Vertessen. Binnen een paar minuten draaide alles om. Het verhaal van deze wedstrijden gaat niet over tactiek, maar over de les die elke supporter ooit moet leren: <em>Nooit. Eerder. Weggaan.</em></p>
+                        <div class="accordion-footer">
+                            <button id="btn-comebacks" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-comebacks">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-twente', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">Het Fenomeen</span> PSV - FC Twente <span class="time-badge">90+6'</span></h4>
+                            <div class="quote-preview">"Je wist gewoon dat het ging gebeuren"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-twente" class="accordion-content">
+                        <p><strong>Datum:</strong> 17 maart 2024 | <strong>Uitslag:</strong> 1-0</p>
+                        <p>Sommige late goals zijn een verrassing, maar deze voelde als een natuurwet. Het was een cruciale, taaie wedstrijd in de titelrace. Het leek 0-0 te blijven. Totdat Ricardo Pepi inviel.</p>
+                        <p>Er ontstond een soort collectief bewustzijn in het Philips Stadion: "Het is Pepi-Time". Het verhaal van deze wedstrijd is het verhaal van het geduld. Geen paniek op de tribune, maar wachten op dat ene moment waarvan je wist dat het zou komen. En hij kwam.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-twente" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-twente">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-monaco', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">De Uitputting</span> PSV - AS Monaco <span class="time-badge">109'</span></h4>
+                            <div class="quote-preview">"Een zwoele zomeravond die nooit leek te eindigen"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-monaco" class="accordion-content">
+                        <p><strong>Datum:</strong> 9 augustus 2022 | <strong>Uitslag:</strong> 3-2 (n.v.)</p>
+                        <p>Het was heet. Het was augustus. En de spanning was ondraaglijk. De Champions League voorronde tegen Monaco was geen voetbalwedstrijd, maar een fysieke uitputtingsslag, zowel voor de spelers als voor de mensen op de tribune.</p>
+                        <p>Toen Luuk de Jong in de verlenging die bal tegen de touwen kopte, was de primaire emotie geen vreugde, maar pure <em>opluchting</em>. Het geluid in het stadion was geen juichkreet, maar een oerkreet van tienduizenden mensen die eindelijk weer adem konden halen.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-monaco" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-monaco">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-magdeburg', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">De Nostalgie</span> PSV - 1. FC Magdeburg <span class="time-badge">Einde</span></h4>
+                            <div class="quote-preview">"Toen voetbal nog kraakte op de radio"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-magdeburg" class="accordion-content">
+                        <p><strong>Datum:</strong> 15 maart 1978 | <strong>Uitslag:</strong> 4-2</p>
+                        <p>Voor de generatie die erbij was, blijft dit dé referentie. Thuis tegen de stugge Oost-Duitsers. Het leek mis te gaan, tot de slotfase. Geen VAR, geen smartphones, alleen het geluid van de radio voor de thuisblijvers en de kolkende massa op de tribunes.</p>
+                        <p>Het is het verhaal van de geboorte van het 'Eindhovens Kwartiertje' op Europees niveau. De ommekeer die de weg vrijmaakte voor de uiteindelijke UEFA Cup winst.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-magdeburg" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-magdeburg">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-accordion" onclick="toggleAccordion('match-cska', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">De Bevrijding</span> PSV - CSKA Moskou <span class="time-badge">86'</span></h4>
+                            <div class="quote-preview">"Jaren van frustratie eruit geschoten"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-cska" class="accordion-content">
+                        <p><strong>Datum:</strong> 8 december 2015 | <strong>Uitslag:</strong> 2-1</p>
+                        <p>Het was misschien niet de 95e minuut, maar de spanning was er niet minder om. Jarenlang had PSV niet overwinterd in de Champions League. Het trauma van 'net niet' hing boven het stadion. Manchester United keek mee.</p>
+                        <p>Toen Davy Pröpper die bal in de hoek joeg, knapte er iets. Geen wondergoal, geen omhaal, maar een doelpunt van pure wilskracht. Het verhaal van deze avond is die van de herwonnen trots: PSV hoorde weer bij de grote jongens.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-cska" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-cska">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="story-accordion" onclick="toggleAccordion('match-az', this)">
+                    <div class="accordion-header">
+                        <div>
+                            <h4 style="margin:0;"><span class="story-tag">Het Uitvak</span> AZ - PSV <span class="time-badge">79'</span></h4>
+                            <div class="quote-preview">"De officieuze kampioenswedstrijd"</div>
+                        </div>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div id="match-az" class="accordion-content">
+                        <p><strong>Datum:</strong> 7 april 2018 | <strong>Uitslag:</strong> 2-3</p>
+                        <p>Soms valt een goal aan de andere kant van het stadion, ver weg van het uitvak. AZ-uit was zo'n moment. Een 2-0 achterstand werd vakkundig omgebogen. Toen Van Ginkel de winnende maakte, explodeerde het uitvak op een manier die de constructie van het AFAS Stadion deed trillen.</p>
+                        <p>Iedereen wist: nu zijn we kampioen. De rit terug in de bus/auto was één groot feest. Het verhaal van de perfecte 'away-day'.</p>
+                        <div class="accordion-footer">
+                            <button id="btn-az" class="vote-btn" onclick="event.stopPropagation()"><i class="fas fa-heart"></i> <span id="count-az">...</span> Legendarisch!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-box">
+                    <div class="cta-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <div style="width: 100%;">
+                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw 'Dying Second'</h3>
+                        <p>Waar was jij tijdens deze momenten? Heb jij je TV uitgezet bij Sevilla? Zat je op de WC bij Feyenoord? Deel jouw verhaal hieronder.</p>
+                        <div id="firebase-stories-general" style="margin-top: 20px;">Laden...</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<div id="footer-container"></div>
+
+    <script src="js/nav.js"></script>
+    
+    <script type="module">
+        // Importeer functies
+        import { laadVerhalen } from './js/firebase.js';
+        import { stemOpVerhaal, laadStemmen } from './js/voting.js';
+
+        // 1. Laad inzendingen
+        laadVerhalen("Dying Seconds", "firebase-stories-general");
+
+        // 2. Activeer stemknoppen
+        const matchIds = ['feyenoord', 'comebacks', 'twente', 'monaco', 'magdeburg', 'cska', 'az'];
+
+        matchIds.forEach(id => {
+            laadStemmen(id); // Laad huidige stand
+            const btn = document.getElementById(`btn-${id}`);
+            if (btn) {
+                btn.onclick = (e) => {
+                    if(e) e.stopPropagation(); 
+                    stemOpVerhaal(id);
+                };
+            }
+        });
+    </script>
+
+    <script>
+        // Accordion Functie (Updated: voegt nu 'active-card' class toe voor styling)
+        function toggleAccordion(id, element) {
+            var content = document.getElementById(id);
+            var isVisible = content.style.display === "block";
+            
+            if (!isVisible) {
+                content.style.display = "block";
+                element.classList.add('active-card'); // Voor de rode rand
+                element.querySelector('.accordion-header').classList.add('active'); // Voor interne logica
+            } else {
+                content.style.display = "none";
+                element.classList.remove('active-card');
+                element.querySelector('.accordion-header').classList.remove('active');
+            }
+        }
+    </script>
+    </body>
+</html>

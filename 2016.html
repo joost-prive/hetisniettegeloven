@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2016 - Victorie via de Vijverberg</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+<div id="menu-container"></div>
+    <header style="background-image: url('img/2016/header.jpg');">
+        <h1>8 MEI 2016</h1>
+        <p style="font-size: 1.2rem;">"Bel Bryan Smeets!"</p>
+    </header>
+    <div class="container">
+        <div class="grid-layout">
+            <div class="main-content">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-mobile-alt"></i> Haperende Telefoons in Zwolle</div>
+                    <p>Jetro Willems zei vooraf dat hij 99% vertrouwen had. Had jij dat ook?</p>
+                    <div class="story-accordion" onclick="toggleAccordion('story-smeets', this)">
+                        <div class="accordion-header">
+                            <div><h4 style="margin:0;"><span class="story-tag">De Held</span> Bryan Smeets</h4><div class="quote-preview">"De man die Ajax velde"</div></div>
+                            <i class="fas fa-chevron-down rotate-icon"></i>
+                        </div>
+                        <div id="story-smeets" class="accordion-content"><p>Hij scoorde de 1-1 voor De Graafschap en schonk PSV de titel. Een ode aan Bryan Smeets.</p></div>
+                    </div>
+                </div>
+                <div class="cta-box">
+                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div style="width: 100%;">
+                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw Ontlading</h3>
+                        <p>Hoe reageerde jij toen de 1-1 viel in Doetinchem?</p>
+                        <div id="firebase-stories-2016" style="margin-top: 20px;">Laden...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-chart-bar"></i> Feiten</div>
+                    <h2 style="text-align:center; font-size:2rem; margin:10px 0;">GRA 1 - 1 AJAX</h2>
+                    <p><strong>Held:</strong> Bryan Smeets</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer-container"></div>
+    <script src="js/nav.js"></script>
+    <script type="module">
+        import { laadVerhalen } from './js/firebase.js';
+        laadVerhalen("2016 - De Graafschap", "firebase-stories-2016");
+    </script>
+    <script>
+        function toggleAccordion(id, element) {
+            var content = document.getElementById(id);
+            var isVisible = content.style.display === "block";
+            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
+            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
+        }
+    </script>
+</body>
+</html>

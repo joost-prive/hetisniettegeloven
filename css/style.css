@@ -1,0 +1,799 @@
+/* --- PSV HUISSTIJL VARIABELEN --- */
+:root {
+    --psv-red: #DA291C;       /* Het officiële PSV rood */
+    --psv-black: #111111;     /* Diep zwart */
+    --psv-white: #FFFFFF;
+    --bg-light: #F4F4F4;      /* Achtergrond grijs */
+    --text-color: #333333;
+    --accent-gold: #C6A664;   /* Kampioensgoud */
+}
+
+/* --- ALGEMENE BASIS --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+
+    /* ACHTERGROND MET OVERLAY */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url('../img/bg_foto.jpg');
+    
+    background-size: cover;       
+    background-position: center top; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 40px;    /* Voegt ruimte toe boven de titel */
+    margin-bottom: 15px; /* Behoudt de ruimte onder de titel */
+}
+
+/* Zorgt ervoor dat de allereerste titel op een pagina niet te veel ruimte aan de bovenkant heeft */
+.container h1:first-child, 
+.article-content h3:first-child {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* --- NAVIGATIE --- */
+.navbar {
+    background-color: var(--psv-white);
+    /* Logo als achtergrond in de balk zelf */
+    background-image: url('../img/logo_psv.svg');
+    background-repeat: no-repeat;
+    background-position: 110% center; /* Schuift het logo naar de rechterkant voor een fragmentarisch effect */
+    background-size: 300px;           /* Maakt het logo groot zodat het deels 'buiten' de balk valt */
+    
+    /* Maakt het logo zeer subtiel (0.05 transparantie) */
+    background-blend-mode: overlay; 
+    
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 3px solid var(--psv-red);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--psv-black); /* Tekst nu zwart op witte achtergrond */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Stijl voor het nieuwe logo */
+.nav-logo img {
+    height: 50px; /* Grootte van het PSV logo */
+    width: auto;
+}
+
+.nav-logo span {
+    color: var(--psv-red);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link {
+    color: var(--psv-black); /* Tekst zwart voor leesbaarheid */
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--psv-red);
+}
+
+/* Subtiel lijntje bij hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: var(--psv-red);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* --- DROPDOWN MENU --- */
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--psv-white);
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-top: 4px solid var(--psv-red);
+    z-index: 1001;
+}
+
+.dropdown-content a {
+    color: var(--psv-black);
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+    color: var(--psv-red);
+}
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+/* --- HEADER --- */
+header {
+    background-size: cover;
+    background-position: center;
+    color: var(--psv-white);
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); 
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--psv-red),
+        var(--psv-red) 20px,
+        var(--psv-white) 20px,
+        var(--psv-white) 40px
+    );
+    border-top: 2px solid var(--psv-black);
+    z-index: 3;
+}
+
+/* --- INTRODUCTIE --- */
+.intro-box {
+    background: var(--psv-white);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--psv-red);
+    text-align: center;
+}
+
+.intro-box strong {
+    color: var(--psv-red);
+}
+
+/* --- MAIN CONTAINER & SECTIES --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- DE MOMENT KAARTEN (HOMEPAGE STIJL) --- */
+.section-box {
+    background: var(--psv-white);
+    margin-bottom: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+    /* Flexbox voor de index layout (naast elkaar) */
+    display: flex; 
+    flex-direction: row; 
+    
+    overflow: hidden; 
+    padding: 0; 
+    border: none !important; 
+    border-left: 6px solid var(--psv-red) !important; 
+    height: 240px; /* Vaste hoogte voor de index kaarten */
+}
+
+.section-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Deel 1: De Tekst (Links) voor Index */
+.card-content {
+    flex: 1; 
+    padding: 25px 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    overflow: hidden; 
+}
+
+.section-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--psv-black);
+    line-height: 1.2;
+}
+
+/* Deel 2: De Foto (Rechts) voor Index */
+.card-img-container {
+    width: 300px;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; 
+    display: block;
+}
+
+/* Mobiele weergave homepage */
+@media (max-width: 768px) {
+    .section-box {
+        flex-direction: column-reverse; 
+        height: auto; 
+    }
+    .card-img-container {
+        width: 100%;
+        height: 200px; 
+    }
+    .card-content {
+        padding: 20px;
+    }
+}
+
+/* Speciale kleuren overrides */
+div[style*="solid #000"] { background-color: #222; color: white; }
+div[style*="solid #000"] h3, div[style*="solid #000"] p { color: white; }
+
+/* --- KNOPPEN (CTA) --- */
+.btn-cta, button[type="submit"] {
+    display: inline-block;
+    background-color: var(--psv-red);
+    color: var(--psv-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-cta:hover, button[type="submit"]:hover {
+    background-color: #b01b15;
+}
+
+/* --- ARTIKEL PAGINA'S LAYOUT --- */
+.grid-layout { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px; 
+}
+
+.article-content { 
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #444; 
+}
+
+/* --- SIDEBAR & KLEINE KAARTEN --- */
+.story-card-compact { 
+    display: flex; 
+    gap: 20px; 
+    border: 1px solid #eee; 
+    padding: 15px; 
+    border-radius: 6px; 
+    transition: transform 0.2s; 
+    cursor: pointer; 
+    text-decoration: none; 
+    color: inherit; 
+    margin-bottom: 15px;
+    background: white; 
+}
+
+.story-card-compact:hover { 
+    transform: translateX(5px); 
+    border-color: var(--psv-red); 
+}
+
+.story-thumb { 
+    width: 80px; 
+    height: 80px; 
+    background: #ddd; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 4px; 
+    flex-shrink: 0; 
+}
+
+/* --- FORMULIEREN --- */
+#meedoen {
+    border-left: 6px solid var(--psv-black) !important;
+}
+form label { display: block; margin-top: 15px; font-weight: bold; }
+input, select, textarea { width: 100%; padding: 10px; margin: 5px 0 20px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--psv-red); box-shadow: 0 0 5px rgba(218, 41, 28, 0.2); }
+
+/* Specifieke reset voor de oproep-box op de index pagina */
+#meedoen.section-box {
+    display: block;       /* Zet de flexbox uit */
+    height: auto;         /* Laat de hoogte meegroeien met de inhoud */
+    padding: 30px;        /* Zorg voor voldoende ademruimte rondom het formulier */
+    overflow: visible;    /* Zorg dat alles getoond wordt */
+}
+
+/* --- LIKE BUTTON --- */
+.vote-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 0.85rem;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.vote-btn:hover { background-color: #fff0f0; border-color: var(--psv-red); color: var(--psv-red); }
+.vote-btn.voted { background-color: var(--psv-red); color: var(--psv-white); border-color: var(--psv-red); cursor: default; }
+
+/* --- FOOTER --- */
+footer {
+    background: var(--psv-black);
+    color: var(--psv-white);
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 5px solid var(--psv-red);
+}
+
+@media (max-width: 900px) {
+    .grid-layout { grid-template-columns: 1fr; }
+    header h1 { font-size: 1.8rem; }
+    .nav-links { display: none; }
+}
+
+/* ========================================================================
+   --- ARTIKEL PAGINA RESET ---
+   ======================================================================== */
+.article-mode .section-box {
+    display: block;       /* Zet flexbox UIT */
+    height: auto;         /* Zet vaste hoogte UIT */
+    min-height: 0;
+    padding: 30px;        /* Herstel de padding */
+    border-left: none !important; /* Verwijder de rode streep links (optioneel) */
+}
+
+.article-mode .section-box:hover {
+    transform: none;      /* Geen hover-beweging op tekstblokken */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article-mode .section-header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--psv-black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-mode .section-header i {
+    color: var(--psv-red);
+}
+
+/* =========================================
+   --- PREMIUM ACCORDION & STORY STYLING ---
+   (Voor artikelen zoals 2025, 2007, etc.)
+   ========================================= */
+
+.story-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.story-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.story-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.story-title {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #000;
+}
+
+.story-action-link {
+    color: var(--psv-red);
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.story-action-link:hover {
+    text-decoration: underline;
+}
+
+.story-accordion-content {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.vote-btn-standard {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 6px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.vote-btn-standard:hover {
+    background: #fdfdfd;
+    border-color: #bbb;
+}
+
+/* De Magisch knop */
+.vote-btn-standard {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.vote-btn-standard:hover {
+    border-color: var(--psv-red);
+    color: var(--psv-red);
+    background: #fffafa;
+}
+
+/* De teaser tekst onder de titel */
+.story-teaser {
+    font-size: 0.95rem;
+    color: #666; /* Subtiel grijs */
+    line-height: 1.4;
+    margin: 5px 0 10px 0; /* Ruimte tussen titel en link */
+    display: block;
+}
+
+/* Zorg dat de link eronder altijd op een nieuwe regel begint */
+.story-action-link {
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+/* Tags */
+.story-tag {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    color: white;
+}
+
+.tag-supporter { background-color: var(--psv-red); }
+.tag-speler { background-color: #333; }
+.tag-stem { background-color: #005eb8; }
+.tag-bestuur { background-color: #666; }
+
+/* Inhoud van uitklappers */
+.accordion-content-box {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #444;
+}
+
+.read-more-link {
+    color: var(--psv-red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.story-accordion {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border-left: 5px solid transparent; 
+    transition: all 0.3s ease;
+}
+
+.story-accordion:hover, 
+.story-accordion.active-card {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-left-color: var(--psv-red);
+    transform: translateY(-2px);
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.accordion-header h4 {
+    margin: 0;
+    color: var(--psv-black);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.accordion-header.active {
+    background-color: #fffdfd;
+}
+
+.accordion-content {
+    display: none; 
+    padding: 0 30px 30px 30px;
+    border-top: 1px solid #f5f5f5;
+    color: #444;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+}
+
+.accordion-content h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: bold;
+}
+
+.quote-preview {
+    font-style: italic;
+    color: #777;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+    color: #ccc;
+}
+
+.story-accordion.active-card .rotate-icon {
+    transform: rotate(180deg);
+    color: var(--psv-red);
+}
+
+.accordion-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --- LABELS & BADGES --- */
+.story-tag {
+    background-color: var(--psv-red);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.time-badge {
+    font-family: 'Courier New', Courier, monospace;
+    background: #222;
+    color: #39ff14; /* Neon groen */
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 5px rgba(57, 255, 20, 0.3);
+}
+
+/* --- CALL TO ACTION BOX --- */
+.cta-box {
+    background: linear-gradient(to right, #ffffff, #fff5f5);
+    border: 1px solid #ffebeb;
+    border-left: 5px solid var(--psv-red);
+    border-radius: 6px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.cta-icon {
+    font-size: 2rem;
+    color: var(--psv-red);
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+/* --- MOBIELE WEERGAVE --- */
+@media (max-width: 900px) {
+    .navbar {
+        height: auto;
+        padding: 15px 5%;
+        flex-direction: column; /* Stapel logo en menu onder elkaar op mobiel */
+        background-position: 150% center; /* Schuif het watermerk verder weg op kleine schermen */
+    }
+
+    .nav-links {
+        display: flex; /* Zorg dat de links zichtbaar blijven */
+        flex-wrap: wrap; /* Laat ze naar de volgende regel verspringen als het niet past */
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-logo img {
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media query voor mobiele verbeteringen */
+@media (max-width: 600px) {
+    /* Zorg dat de header van een verhaal onder elkaar stapt */
+    .story-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Laat de Magisch-knop de volledige breedte pakken of netjes uitlijnen */
+    .vote-btn-standard {
+        align-self: flex-start;
+        width: auto;
+    }
+
+    /* Voorkom dat lange woorden of titels de box uitrekken */
+    .story-title {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+    }
+
+    /* Zorg dat de hoofdcontainer nooit breder is dan het scherm */
+    .container {
+        padding: 20px 15px;
+        overflow-x: hidden;
+    }
+}

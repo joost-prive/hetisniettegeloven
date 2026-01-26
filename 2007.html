@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2007 - Het is niet te geloven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .grid-search { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
+        @media (max-width: 768px) { .grid-search { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="article-mode">
+
+    <div id="menu-container"></div>
+
+    <header style="background-image: url('img/2007/header.jpg');">
+        <h1>29 APRIL 2007</h1>
+        <p style="font-size: 1.2rem;">"Dames en heren, PSV is kampioen!"</p>
+    </header>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <a href="momenten/2007/media.html" class="nav-link" style="color: var(--psv-red); font-weight: bold;">
+                    <i class="fas fa-chevron-right"></i> Meer beeldmateriaal en supportersfoto's
+                </a>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal</div>
+                <p>PSV begon de dag met een vrijwel onmogelijke opgave. Ajax en AZ stonden er beter voor. Wat volgde was de meest krankzinnige ontknoping uit de geschiedenis van de Eredivisie.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p>Terwijl AZ verloor bij Excelsior en Ajax niet genoeg scoorde tegen Willem II, ramde Phillip Cocu de 5-1 tegen de touwen. Het stadion ontplofte. De schaal was binnen op één doelpunt verschil. Een moment dat niemand die erbij was ooit zal vergeten.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                </div>
+            </div>
+
+<div class="section-box">
+    <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+    <div id="story-container">
+        
+        <div class="story-item" data-votes="0" id="item-remy">
+            <div class="story-header-row">
+                <div class="story-content-left">
+                    <span class="story-tag tag-supporter">Supportersverhaal</span>
+                    <h4 class="story-title">Remy: "Wij zitten kapot"</h4>
+                    <p class="story-teaser">De wanhoop van Lighttown Madness sloeg om in pure extase.</p>
+                    <a href="momenten/2007/verhalen/remy.html" class="story-action-link">Lees het hele verhaal <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <button id="btn-remy" class="vote-btn-standard" onclick="voteAndSort('remy')"><i class="fas fa-heart"></i> <span id="count-remy">0</span> Magisch!</button>
+            </div>
+        </div>
+
+        <div class="story-item" data-votes="0" id="item-dirk">
+            <div class="story-header-row">
+                <div class="story-content-left">
+                    <span class="story-tag tag-supporter">Supportersverhaal</span>
+                    <h4 class="story-title">Dirk: Rally in Best afgezegd</h4>
+                    <p class="story-teaser">Hij zou gaan racen, maar belandde toch in het kolkende stadion.</p>
+                    <a href="momenten/2007/verhalen/dirk.html" class="story-action-link">Lees het hele verhaal <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <button id="btn-dirk" class="vote-btn-standard" onclick="voteAndSort('dirk')"><i class="fas fa-heart"></i> <span id="count-dirk">0</span> Magisch!</button>
+            </div>
+        </div>
+
+        <div class="story-item" data-votes="0" id="item-kluivert">
+            <div class="story-header-row">
+                <div class="story-content-left">
+                    <span class="story-tag tag-speler">De Spits</span>
+                    <h4 class="story-title">Patrick Kluivert: ‘Dat spontane, dát was het mooiste’</h4>
+                    <p class="story-teaser">"Ik weet nog dat iedereen er vooraf nog in geloofde bij ons in de kleedkamer."</p>
+                    <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-kluivert', this)">
+                        <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                    </div>
+                </div>
+                <button id="btn-kluivert" class="vote-btn-standard" onclick="voteAndSort('kluivert')"><i class="fas fa-heart"></i> <span id="count-kluivert">0</span> Magisch!</button>
+            </div>
+            <div id="story-kluivert" class="story-accordion-content">
+                <p>Die 29ste april in 2007. Ook de enigszins ‘vergeten’ Patrick Kluivert was erbij. De voormalige spits, die als PSV’er vooral als invaller waarde had, was drie keer trefzeker dat seizoen. Natuurlijk, geen topscorersaantallen. Maar aan het einde van de rit zou elk doelpunt meetellen, dus ook die eretreffer tegen Ajax (1-5) in eigen huis. ,,Al word ik nooit meer aan die goal herinnerd”, zegt Kluivert. ,,Ook niet in Amsterdam. Maar het is in dat seizoen inderdaad wel gebleken dat elke goal zijn waarde heeft.”</p>
+                <p>Op de slotdag verloor AZ verrassend bij Excelsior, terwijl Ajax in Tilburg (0-2) uiteindelijk een doelpuntje tekort kwam voor de schaal. PSV denderde in eigen huis over Vitesse heen (5-1), een kwartiertje voor tijd kwam Kluivert in het veld. ,,Ik weet nog dat iedereen er vooraf nog in geloofde bij ons in de kleedkamer. Op het moment dat ik in het veld kwam, wist ik niet hoe de standen waren. Maar aan het publiek merkte je dat er wat in de lucht hing. Er spatte enthousiasme vanaf”, herinnert Kluivert.</p>
+                <p>Een paar minuten later was het ook daadwerkelijk zover. ,,Dat was het mooiste aan die dag en dat feest; dat het zo spontaan was. De vreugde was enorm. Ik heb maar een seizoen gespeeld bij PSV, maar mede door die dag is het een mooie periode geworden. Een grote club, met warme mensen bovendien.”</p>
+                <p style="font-size: 0.85rem; color: #777;"><em>Bron: <a href="https://www.ed.nl/psv/het-is-niet-te-geloven-het-is-niet-te-geloven~a875cf8c/" target="_blank" style="color: var(--psv-red);">Eindhovens Dagblad</a></em></p>
+            </div>
+        </div>
+
+        <div class="story-item" data-votes="0" id="item-westerman">
+            <div class="story-header-row">
+                <div class="story-content-left">
+                    <span class="story-tag tag-stem">De Stem</span>
+                    <h4 class="story-title">Koert Westerman: 'Het is niet te geloven!'</h4>
+                    <p class="story-teaser">"Over honderd jaar laten ze dit zien en dan horen ze jouw stem."</p>
+                    <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-westerman', this)">
+                        <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                    </div>
+                </div>
+                <button id="btn-westerman" class="vote-btn-standard" onclick="voteAndSort('westerman')"><i class="fas fa-heart"></i> <span id="count-westerman">0</span> Magisch!</button>
+            </div>
+            <div id="story-westerman" class="story-accordion-content">
+                <p>,, De titel zou ergens anders gepakt worden. Iedereen die toen beroepsmatig in het Philips Stadion zat, die baalde toch wel een beetje”, weet commentator Koert Westerman nog. ,,Ook bij ons was er een bepaalde rangorde. En kennelijk was ik de nummer drie, want ik moest naar PSV. Die hadden het minste kans van allemaal. Daar was ik best verdrietig over.”</p>
+                <p>Maar Westerman zou getuige zijn van een historisch sportmoment in Eindhoven. Belangrijker: hij mocht het van commentaar voorzien. ,,Ik had letterlijk een brok in mijn keel en riep na het laatste fluitsignaal: ‘Het is niet te geloven. Het is niet te geloven’. Daar zat veel emotie bij. Ik ben trots op dat moment, want het was oprecht. Het filmpje draaien ze nog steeds in het stadion voor thuiswedstrijden. Er kwam echt wat los bij PSV. Ik zag Alex bijvoorbeeld huilend zijn moeder bellen in de kleedkamer”, zegt Westerman, die sindsdien niet meer stuk kan in PSV-kringen.</p>
+                <p>,,Mark van Bommel wilde mij als ceremoniemeester bij zijn afscheidswedstrijd. Ik dacht: waarom? Hij zat op die 29 april in München achter zijn decoder, terwijl ik commentaar gaf. Vandaar dus.” Het mooiste compliment kreeg hij toen hij ’s avonds laat thuiskwam. ,,Mijn vader leefde toen nog. Normaal gesproken was hij nooit zo met mijn werk bezig, maar hij zei toen: ‘Over honderd jaar laten ze dit zien en dan horen ze jouw stem’. Het is zonder enige twijfel mijn mooiste moment als verslaggever.”</p>
+                <p style="font-size: 0.85rem; color: #777;"><em>Bron: <a href="https://www.ed.nl/psv/het-is-niet-te-geloven-het-is-niet-te-geloven~a875cf8c/" target="_blank" style="color: var(--psv-red);">Eindhovens Dagblad</a></em></p>
+            </div>
+        </div>
+
+        <div class="story-item" data-votes="0" id="item-sakkers">
+            <div class="story-header-row">
+                <div class="story-content-left">
+                    <span class="story-tag tag-bestuur">De Burgemeester</span>
+                    <h4 class="story-title">Alexander Sakkers: ‘Eindhovenaren hebben een goede dronk’</h4>
+                    <p class="story-teaser">"In de stad lagen er dan enkele centimeters aan platgetrapte plastic bekers."</p>
+                    <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-sakkers', this)">
+                        <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                    </div>
+                </div>
+                <button id="btn-sakkers" class="vote-btn-standard" onclick="voteAndSort('sakkers')"><i class="fas fa-heart"></i> <span id="count-sakkers">0</span> Magisch!</button>
+            </div>
+            <div id="story-sakkers" class="story-accordion-content">
+                <p>Alexander Sakkers zegt het eerlijk. ,,Ik moet toch even graven in mijn geheugen. In mijn periode als burgemeester van Eindhoven werd PSV namelijk bijna elk jaar landskampioen. Alleen in 2004 niet. Maar inderdaad, 2007 was natuurlijk een groot verrassingsmoment. Het summum. We hadden er niet echt meer rekening mee gehouden, maar er lag natuurlijk wel een draaiboek klaar. We hadden inmiddels de nodige ervaring opgebouwd met kampioensfeesten.”</p>
+                <p>Zoveel ervaring, dat men in Alkmaar zelfs advies had ingewonnen in de toenmalige voetbalhoofdstad Eindhoven. Iedereen in de Zaanstreek was klaar voor een titel van AZ, maar het werd PSV. ,,De huldiging was toen in het stadion. Na het kampioensfeest en Koninginnedag kon de politie het niet managen om een dag later ook nog een huldiging te organiseren op het Stadhuisplein. Al hebben Eindhovenaren een goede dronk, dat heb ik altijd al geroepen. In de stad lagen er dan enkele centimeters aan platgetrapte plastic bekers, daar moet ik nu aan denken. Maar ook toen dat spontane feest losbarstte, waren er nauwelijks excessen of aanhoudingen”, herinnert Sakkers, die tussen 2003 en 2007 burgervader was in Eindhoven.</p>
+                <p>,,Ik heb nog weleens aan mijn opvolger Rob van Gijzel gevraagd: waar blijven die kampioensschalen? Daar hebben we hartelijk om kunnen lachen. Jammer genoeg is er dit jaar geen feest in de stad. Zo’n scène op het bordes van een kampioensteam, dat blijft fantastisch om te zien. Dan moet je als burgemeester of bobo ook een beetje je plaats kennen en op de achtergrond vertoeven.”</p>
+                <p style="font-size: 0.85rem; color: #777;"><em>Bron: <a href="https://www.ed.nl/psv/het-is-niet-te-geloven-het-is-niet-te-geloven~a875cf8c/" target="_blank" style="color: var(--psv-red);">Eindhovens Dagblad</a></em></p>
+            </div>
+        </div>
+
+    </div>
+</div> 
+
+<div class="section-box" style="background-color:#f8f9fa; display: block; height: auto;">
+    <div class="section-header"><i class="fas fa-search"></i> Op zoek naar de verhalen</div>
+    <p style="margin-bottom: 20px;">Help ons het boek compleet te maken. Heb jij contact met deze mensen of weet jij meer over deze specifieke momenten?</p>
+    
+    <div class="grid-search">
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Berry van Aerle</h4>
+            <p class="story-teaser">Als oud-speler mateloos populair en als supporterscoördinator aan PSV verbonden.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-berry', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-berry" class="story-accordion-content">
+                <p>Hoe groot was de teleurstelling na Utrecht, ook bij hem? Wat gebeurde er met de supporters na afloop van de wedstrijd? Hoe heeft hij de supportersacties rondom NEC uit ervaren?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Mart van den Heuvel</h4>
+            <p class="story-teaser">Jarenlange steun en toeverlaat. Bij Mart op de massagetafel gooien spelers alles eruit.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-mart', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-mart" class="story-accordion-content">
+                <p>Hoe gingen de spelers om met de slechte vorm waarin het elftal verkeerde? Wat ging er mis? Hoe verschrikkelijk was de stemming in aanloop naar Vitesse?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Theo Maassen</h4>
+            <p class="story-teaser">Sprong na de kampioenswedstrijd op zijn fiets om alsnog naar het stadion te gaan.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-theo', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-theo" class="story-accordion-content">
+                <p>Om in een eerder gekocht kampioensshirt alsnog iets van de volop heersende waanzin mee te maken. Het interview zal gaan over hoe het kon gebeuren dat PSV haar voorsprong weg gaf.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Guus Meeuwis</h4>
+            <p class="story-teaser">Zat tijdens de wedstrijd in het vliegtuig en werd bij thuiskomst via SMS ingelicht.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-guus', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-guus" class="story-accordion-content">
+                <p>Trad dinsdag op tijdens de huldiging. Het interview zal gaan over het volgen of juist niet volgen van de wedstrijd tegen Vitesse. Had hij het van collega’s zwaar te verduren gekregen?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Buurman Farfán</h4>
+            <p class="story-teaser">Hoorde de buurman ’s ochtends keihard de oude PSV-cd draaien.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-farfan-buur', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-farfan-buur" class="story-accordion-content">
+                <p>Met zijn eigen Farfan-nummer nog het hardst. Hoe beleefde deze supporter de wedstrijddag? Had hij er vertrouwen in?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Patrick van de Voort</h4>
+            <p class="story-teaser">Moest in de rust met tegenzin toch alle voorbereidingen voor het feest weer in gang zetten.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-patrick', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-patrick" class="story-accordion-content">
+                <p>Hoe heeft hij de wedstrijd ervaren? Welk gevoel ging door hem heen toen in de rust alsnog van alles klaargezet moest worden? Hoe leefde hij met de wedstrijd en de ontknoping mee?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Bert Bovers (Tattoo)</h4>
+            <p class="story-teaser">Liep op de dinsdag al rond met een tatoeage van het twintigste kampioenschap.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-bert', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-bert" class="story-accordion-content">
+                <p>Hoe beleefde hij de laatste wedstrijden? Heeft hij erover getwijfeld de tatoeage al eerder te laten zetten? Was het een impulsieve actie?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Evert ten Napel</h4>
+            <p class="story-teaser">Radioverslaggever die live verslag deed van de meest bizarre voetbalmiddag ooit.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-evert', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-evert" class="story-accordion-content">
+                <p>Besefte hij volop wat er aan het gebeuren was? Kreeg hij de spanning van het publiek mee? Voelde hij de wil om te winnen van de spelers? Hoe verliep die middag onderling?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Supporter Excelsior</h4>
+            <p class="story-teaser">De club die AZ het kampioenschap ontnam. Speelde alleen nog voor een winstpremie.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-excelsior', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-excelsior" class="story-accordion-content">
+                <p>Hoe beleefden de supporters deze wedstrijd? Hadden ze er vooraf verwachtingen van? Wie gunden ze het kampioenschap? Hoe verliep de wedstrijd?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Frits Schuitema</h4>
+            <p class="story-teaser">Uitte na Utrecht openlijk zijn twijfels over het aanblijven van Ronald Koeman.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-frits', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-frits" class="story-accordion-content">
+                <p>Het interview zal gaan over de mogelijke gevolgen van het mislopen van de titel. Over zijn publieke twist met Koeman en zijn eigen gevoel.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">James & Andrea (UK)</h4>
+            <p class="story-teaser">Seizoenskaarthouders die voor een kansloze wedstrijd toch overkwamen.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-english', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-english" class="story-accordion-content">
+                <p>Maakten samen met 35.000 anderen de meest waanzinnige middag ooit mee. Was er twijfel om wel of niet af te reizen? Hoe verliep de reis?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Fam. van Kemenade</h4>
+            <p class="story-teaser">Wie PSV zegt, zegt De Herdgang. Staan altijd klaar voor het eerste elftal.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-kemenade', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-kemenade" class="story-accordion-content">
+                <p>Het interview zal gaan over de mentale wederopstanding. Zagen ze dat spelers zich niet happy voelden? Hoe verliep de trainingsweek?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Frank Wijnveld</h4>
+            <p class="story-teaser">Veiligheidscoördinator. Supporters werden onrustig en gingen zelfs het veld op.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-frank', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-frank" class="story-accordion-content">
+                <p>Hoe ging hij om met de dreiging van ongeregeldheden? Wat vond hij van de manier waarop supporters hun onvrede uitten?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Lempkesfabriek</h4>
+            <p class="story-teaser">Barbecue georganiseerd: ‘Mochten we kampioen worden, dan ga ik de stad in.’</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-lempkes', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-lempkes" class="story-accordion-content">
+                <p>Dat maakte uiteraard niemand wat uit, want het ging toch nergens meer om. Hoe verliep de wedstrijddag voor deze supporter?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Adri / SRV Manner</h4>
+            <p class="story-teaser">Brachten samen met Lighttown Madness een kampioens-CD uit.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-adri', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-adri" class="story-accordion-content">
+                <p>Samen met o.a. de SRV-Manner werden vijf nummers opgenomen. Een kwartier voor tijd werden ze gebeld om te komen zingen.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Jefferson Farfan</h4>
+            <p class="story-teaser">Besliste de cruciale wedstrijd tegen Twente. Had hij werkelijk vertrouwen?</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-farfan', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-farfan" class="story-accordion-content">
+                <p>Draaide hij werkelijk de oude kampioens-CD voorafgaand aan de wedstrijd? Hoe ging hij de wedstrijd tegen Vitesse in?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Uitreiker schaal</h4>
+            <p class="story-teaser">Nog nooit konden er drie clubs op de laatste dag kampioen worden.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-knvb', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-knvb" class="story-accordion-content">
+                <p>Welke KNVB-official had de ‘ondankbare’ taak om de onbetekende wedstrijd PSV-Vitesse bij te wonen? Hoe was dit zo tot stand gekomen?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Hen-3 & Zoontje</h4>
+            <p class="story-teaser">Hendrie's zoontje was vol vertrouwen en draaide al zijn PSV-liedjes af.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-hen3', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-hen3" class="story-accordion-content">
+                <p>Het boek vol antwoorden gaf aan ‘Gedraag je alsof het al zo is’. Op PSV Netwerk staat al een stuk van zijn relaas.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Steward Oost</h4>
+            <p class="story-teaser">Vrijwilligers die met de rug naar het veld het publiek in de gaten houden.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-steward', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-steward" class="story-accordion-content">
+                <p>Hoe enorm spannend moet dat bij de wedstrijd tegen Vitesse geweest zijn? En hoe waanzinnig gespannen zagen de supporters eruit?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Supporter Willem II</h4>
+            <p class="story-teaser">Ajax-supporters waren vol vertrouwen, maar de Tilburgers riepen ‘Boeren!’.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-willem2', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-willem2" class="story-accordion-content">
+                <p>Met welk gevoel gingen de Willem II-supporters naar de wedstrijd? Hadden zij een voorkeur voor de uiteindelijke kampioen?</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Nilis the Legend</h4>
+            <p class="story-teaser">Stond bij de hekken te genieten totdat hij op zijn schouder getikt werd.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-nilis', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-nilis" class="story-accordion-content">
+                <p>Na afloop viel zijn vriendin, die hij met moeite had overgehaald om mee te gaan naar het stadion, hem plotseling in de armen.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">Mystery Graffiti-man</h4>
+            <p class="story-teaser">Verantwoordelijk voor ‘Aan ’t blauwdoek meer sterren’ en de silhouetten van Cocu.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-graffiti', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-graffiti" class="story-accordion-content">
+                <p>Overal in de stad verscheen ‘Koning Cocu’. De identiteit van deze mystery man is onder insiders bekend.</p>
+            </div>
+        </div>
+
+        <div class="story-item" style="padding: 15px;">
+            <h4 class="story-title" style="font-size: 1rem;">MauroPSV (Frankrijk)</h4>
+            <p class="story-teaser">Bezocht trouw elke wedstrijd, maar zat tijdens Vitesse op een camping in Frankrijk.</p>
+            <div class="story-action-link dropdown-trigger" onclick="toggleStory('search-mauro', this)">
+                <i class="fas fa-chevron-down"></i> Bekijk oproep
+            </div>
+            <div id="search-mauro" class="story-accordion-content">
+                <p>Probeerden via sms de waanzinnige wedstrijd te volgen vanaf de camping. Dat bleek echter moeilijker dan verwacht.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+			
+			<div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-upload"></i></div>
+    <div>
+        <h4 style="margin: 0; color: var(--psv-black);">Heb jij nog een ander verhaal?</h4>
+        <p style="margin: 5px 0 0; color: #666;">Help ons het boek compleet te maken. <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw herinnering.</a></p>
+    </div>
+</div>
+			
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:3rem; margin:10px 0; color:var(--psv-red);">5 - 1</h2>
+                    <p><strong>Tegenstander:</strong> Vitesse</p>
+                    <p><strong>Datum:</strong> 29 april 2007</p>
+                    <p><strong>Doelpunten:</strong> Alex, Farfan (2x), Afellay, Cocu</p>
+                </div>
+            </div>
+
+            <div class="section-box" style="background: #fffdf0; border-left: 6px solid #fadb14 !important;">
+                <div class="section-header" style="border-bottom-color: #fadb14;"><i class="fas fa-lightbulb" style="color:#fadb14;"></i> De feitjes</div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>Jan Smit zou eigenlijk in Alkmaar optreden voor AZ, maar kwam uiteindelijk naar Eindhoven.</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>De SRV-mannen werden vanaf de tribune het veld op geroepen om te zingen.</span>
+                    </li>
+                    <li style="font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-check" style="color:#fadb14; margin-top:3px;"></i>
+                        <span>Koert Westerman voorzag de 5-1 van zijn legendarische commentaar.</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/nav.js"></script>
+<script type="module">
+    import './js/main.js';
+    import { laadStemmen } from './js/voting.js';
+
+    // Alleen de specifieke ID's voor dit jaar
+    const storyIds = ['remy', 'dirk', 'kluivert', 'westerman', 'sakkers'];
+
+    window.addEventListener('load', async () => {
+        for (const id of storyIds) {
+            await laadStemmen(id);
+            const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+            document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+        }
+        sorteerVerhalen();
+    });
+</script>  
+
+</body>
+</html>

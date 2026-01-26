@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 - Remontada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+<div id="menu-container"></div>
+    <header style="background-image: url('img/2025/header.jpg');">
+        <h1>2025: REMONTADA</h1>
+        <p style="font-size: 1.2rem;">"Van Ramp naar Remontada"</p>
+    </header>
+    <div class="container">
+        <div class="grid-layout">
+            <div class="main-content">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-history"></i> De Ontknoping</div>
+                    <p>Het meest recente hoofdstuk van onze clubgeschiedenis. Van 9 punten achterstand naar de titel.</p>
+                     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:4px; margin-top:15px; background:#000;">
+                        <div style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; flex-direction:column;">
+                             <i class="fas fa-play-circle" style="font-size:3rem; margin-bottom:10px;"></i>
+                             <span>Hoogtepunten PSV - Heracles (3-1)</span>
+                         </div>
+                    </div>
+                </div>
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-star"></i> De Verhalen van 2025</div>
+                    <div class="story-accordion" onclick="toggleAccordion('story-droomweek', this)">
+                        <div class="accordion-header">
+                            <div><h4 style="margin:0;"><span class="story-tag">De Wedstrijd</span> Joey Veerman & Luuk de Jong</h4><div class="quote-preview">"Mooier kan het niet: Droomweek"</div></div>
+                            <i class="fas fa-chevron-down rotate-icon"></i>
+                        </div>
+                        <div id="story-droomweek" class="accordion-content"><p>Een blij verraste Noa Lang noemde het vlak na afloop ‘een rollercoaster’. Joey Veerman kende naar eigen zeggen ‘een droomweek’.</p></div>
+                    </div>
+                    <div class="story-accordion" onclick="toggleAccordion('story-huldiging', this)">
+                        <div class="accordion-header">
+                            <div><h4 style="margin:0;"><span class="story-tag">De Huldiging</span> Platte kar & Stadhuisplein</h4><div class="quote-preview">"Dit maakt me heel trots"</div></div>
+                            <i class="fas fa-chevron-down rotate-icon"></i>
+                        </div>
+                        <div id="story-huldiging" class="accordion-content"><p>Op een stralend mooie en zonnige maandag vierde PSV het 26ste landskampioenschap. Nog intenser, nog blijer en nog opgewekter dan vorig jaar.</p></div>
+                    </div>
+                </div>
+                <div class="cta-box">
+                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div style="width: 100%;">
+                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw Verhaal</h3>
+                        <p>Hoe heb jij dit seizoen beleefd? Deel jouw verhaal hieronder.</p>
+                        <div id="firebase-stories-2025" style="margin-top: 20px;">Laden...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-chart-bar"></i> Feiten</div>
+                    <h2 style="text-align:center; font-size:2.5rem; margin:10px 0;">3 - 1</h2>
+                    <p><strong>Datum:</strong> 18 Mei 2025</p>
+                    <p><strong>Held:</strong> Het Collectief</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer-container"></div>
+    <script src="js/nav.js"></script>
+    <script type="module">
+        import { laadVerhalen } from './js/firebase.js';
+        laadVerhalen("2025 - Remontada", "firebase-stories-2025");
+    </script>
+    <script>
+        function toggleAccordion(id, element) {
+            var content = document.getElementById(id);
+            var isVisible = content.style.display === "block";
+            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
+            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
+        }
+    </script>
+</body>
+</html>

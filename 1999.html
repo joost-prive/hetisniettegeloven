@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1999 - Het Mirakel van Utrecht</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+
+    <div id="menu-container"></div>
+
+    <header style="background-image: url('img/1991/header.jpg');">
+        <h1>23 MEI 1999</h1>
+        <p style="font-size: 1.2rem;">"I've got the Pope on the line!"</p>
+    </header>
+
+    <div class="container grid-layout">
+        <main class="main-content">
+            
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-video"></i> De Beelden</div>
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin-bottom: 15px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/FLpXLjn4HKY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-history"></i> Het Verhaal: Zinderende ontknoping</div>
+                <p>23 mei 1999. Een datum die PSV-supporters herinneren als de dag van het 'Mirakel van Utrecht'. PSV begon de laatste speeldag op een troosteloze vijfde plaats. Voorronde Champions League leek een utopie, want de club moest niet alleen zelf winnen, maar was ook afhankelijk van misstappen van zowel Vitesse als Roda JC. Wat volgde was een emotionele uitputtingsslag die alle wetten van de logica tartte.</p>
+                
+                <div id="verhaal-full" class="story-accordion-content">
+                    <p><strong>De totale wanhoop</strong><br>
+                    De middag in de Galgenwaard begon dramatisch. Terwijl de zenuwen op de tribune strak stonden, zakte PSV op het veld door de ondergrens. Bij rust keek de ploeg tegen een 2-0 achterstand aan door doelpunten van Utrecht-spelers De Jong en Van Mol. Omdat Vitesse op dat moment leidde in de Kuip, was PSV virtueel gezien volledig uitgeschakeld voor Europees voetbal. De sfeer in het uitvak was ijzig; het seizoen leek in mineur te eindigen.</p>
+
+                    <p><strong>De wederopstanding</strong><br>
+                    In de kleedkamer zorgde Sir Bobby Robson voor een legendarisch moment van ontspanning door te doen alsof hij de Paus aan de lijn had. Met hernieuwde energie kwam PSV de kleedkamer uit. Ruud van Nistelrooij bracht de spanning terug via een penalty, waarna de Rus Khokhlov de gelijkmaker binnenschoot. Zelfs een rode kaart voor Björn van der Doelen ("De Rat") kon de Eindhovense dadendrang niet stoppen.</p>
+
+                    <p><strong>De apotheose in de 90e minuut</strong><br>
+                    Terwijl de berichten binnensijpelden dat Feyenoord op 1-1 was gekomen tegen Vitesse en Roda JC bleef steken op 0-0, wist PSV wat het te doen stond. In de absolute slotfase viel de bal goed voor Arnold Bruggink. Hij aarzelde niet en schoot de 2-3 binnen. Het uitvak ontplofte. Van de vijfde naar de derde plaats in slechts 45 minuten voetbal; het mirakel was voltooid. PSV stelde hiermee op de allerlaatste dag deelname aan de Champions League veilig.</p>
+                </div>
+                
+                <div class="story-action-link dropdown-trigger" onclick="toggleStory('verhaal-full', this)" style="margin-top:15px;">
+                    <i class="fas fa-chevron-down"></i> Lees de volledige reconstructie
+                </div>
+            </div>
+
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De échte verhalen</div>
+                <div id="story-container">
+                    
+                    <div class="story-item" data-votes="0" id="item-robson">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-speler">De Trainer</span>
+                                <h4 class="story-title">Sir Bobby Robson: Een waardig afscheid</h4>
+                                <p class="story-teaser">"Hij werd op de schouders genomen door het publiek van de tegenstander."</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-robson', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-robson" class="vote-btn-standard" onclick="voteAndSort('robson')"><i class="fas fa-heart"></i> <span id="count-robson">0</span> Magisch!</button>
+                        </div>
+                        <div id="story-robson" class="story-accordion-content">
+                            <p>Het Mirakel van Utrecht was de laatste officiële wedstrijd van Sir Bobby Robson als hoofdtrainer van PSV. Na het laatste fluitsignaal bestormden uitzinnige supporters het veld. In een uniek gebaar van respect werd de Engelse heer op de schouders genomen en over het veld van FC Utrecht gedragen. Het was een eerbetoon aan een man die met zijn humor en menselijkheid het onmogelijke mogelijk maakte.</p>
+                            <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
+                                <strong>Bronnen:</strong> 
+                                <a href="https://www.psv.nl/media/artikel/psv-blikt-terug-op-het-mirakel-van-utrecht" target="_blank">PSV.nl</a> | 
+                                <a href="https://www.psvfans.nl/fc-utrecht-psv-was-een-waar-spektakel-psv-had-een-mirakel-nodig/" target="_blank">PSVfans.nl</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+				
+				<div id="user-stories-1999">
+				</div>
+				
+            </div>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-bullhorn"></i></div>
+                <div>
+                    <h4 style="margin: 0; color: var(--psv-black);">Was jij erbij in Utrecht?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Wij zoeken supporters die de sfeer in de Galgenwaard hebben beleefd of verhalen hebben over de bizarre aanloop naar dit mirakel. <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw herinnering.</a></p>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De feiten</div>
+                <div style="text-align:center;">
+                    <h2 style="font-size:2.5rem; margin:10px 0; color:var(--psv-red);">2 - 3</h2>
+                    <p><strong>Wedstrijd:</strong> FC Utrecht - PSV</p>
+                    <p><strong>Datum:</strong> 23 mei 1999</p>
+                    <p><strong>Resultaat:</strong> 3e plaats (CL Voorronde)</p>
+                </div>
+            </div>
+
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-info-circle"></i> Wist je dat?</div>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-calculator" style="color:#fadb14; margin-top:3px;"></i>
+                        <span><strong>De Rekensom:</strong> PSV wipte op de laatste dag over Vitesse en Roda JC heen dankzij puntenverlies van de concurrentie.</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-phone" style="color:#fadb14; margin-top:3px;"></i>
+                        <span><strong>De Paus:</strong> Robson brak de spanning in de rust door te doen alsof hij met de Paus belde: "He says we'll score three!"</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-user-shield" style="color:#fadb14; margin-top:3px;"></i>
+                        <span><strong>Op de schouders:</strong> Sir Bobby Robson werd na de winst door uitzinnige fans over het Utrechtse veld rondgedragen.</span>
+                    </li>
+                    <li style="font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-gavel" style="color:#fadb14; margin-top:3px;"></i>
+                        <span><strong>Met 10 man:</strong> Björn van der Doelen ("De Rat") kreeg rood, waarna PSV met een man minder alsnog de winst greep.</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/nav.js"></script>
+<script type="module">
+    import './js/main.js';
+    import { laadStemmen } from './js/voting.js';
+    // Importeer de database functie
+    import { laadVerhalen } from './js/firebase.js'; 
+
+    const storyIds = ['robson'];
+
+    window.addEventListener('load', async () => {
+        // Haal de verhalen op voor het moment "1999" 
+        // en zet ze in de div met id "user-stories-1999"
+        laadVerhalen("1999", "user-stories-1999");
+
+        for (const id of storyIds) {
+            await laadStemmen(id);
+            const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+            document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+        }
+        if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+    });
+</script>
+</body>
+</html>

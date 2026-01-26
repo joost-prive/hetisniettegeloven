@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2010 - De 10-0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="article-mode">
+<div id="menu-container"></div>
+    <header style="background-image: url('img/2010/header.jpg');">
+        <h1>24 OKTOBER 2010</h1>
+        <p style="font-size: 1.2rem;">"Geen titel, wel geschiedenis"</p>
+    </header>
+    <div class="container">
+        <div class="grid-layout">
+            <div class="main-content">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-balance-scale"></i> Leedvermaak of Medelijden?</div>
+                    <p>Bij rust was het nog maar 2-0. Daarna gebeurde het ongelofelijke. Een historische middag in Eindhoven.</p>
+                    <div class="story-accordion" onclick="toggleAccordion('story-tattoo', this)">
+                        <div class="accordion-header">
+                            <div><h4 style="margin:0;"><span class="story-tag">De Inkt</span> De 10-0 Tattoo</h4><div class="quote-preview">"Voor eeuwig op je been"</div></div>
+                            <i class="fas fa-chevron-down rotate-icon"></i>
+                        </div>
+                        <div id="story-tattoo" class="accordion-content"><p>Wij zoeken de supporter die de uitslag heeft laten tatoeëren. Ken jij hem of ben jij hem?</p></div>
+                    </div>
+                </div>
+                <div class="cta-box">
+                    <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div style="width: 100%;">
+                        <h3 style="margin-top:0; color:var(--psv-red);">Jouw 10-0</h3>
+                        <p>Was het leedvermaak of medelijden? Deel je gevoel van die dag.</p>
+                        <div id="firebase-stories-2010" style="margin-top: 20px;">Laden...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="section-box">
+                    <div class="section-header"><i class="fas fa-chart-bar"></i> Scoreverloop</div>
+                    <h2 style="text-align:center; font-size:2rem; margin:10px 0;">10 - 0</h2>
+                    <p>Reis (3x), Lens (2x), Dzsudzsák (2x)...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="footer-container"></div>
+    <script src="js/nav.js"></script>
+    <script type="module">
+        import { laadVerhalen } from './js/firebase.js';
+        laadVerhalen("2010 - Feyenoord", "firebase-stories-2010");
+    </script>
+    <script>
+        function toggleAccordion(id, element) {
+            var content = document.getElementById(id);
+            var isVisible = content.style.display === "block";
+            if (!isVisible) { content.style.display = "block"; element.classList.add('active-card'); element.querySelector('.accordion-header').classList.add('active'); } 
+            else { content.style.display = "none"; element.classList.remove('active-card'); element.querySelector('.accordion-header').classList.remove('active'); }
+        }
+    </script>
+</body>
+</html>
