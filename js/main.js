@@ -1,7 +1,8 @@
 /* --- js/main.js --- */
 import { stemOpVerhaal, laadStemmen } from './voting.js';
+import { initReacties } from './reacties.js';
 
-// Universele Toggle
+// Universele Toggle — opent verhaal EN laadt reacties bij eerste opening
 window.toggleStory = function(id, element) {
     const content = document.getElementById(id);
     if (!content) return;
@@ -10,6 +11,11 @@ window.toggleStory = function(id, element) {
         content.style.display = "block";
         element.innerHTML = '<i class="fas fa-chevron-up"></i> Sluit verhaal';
         element.closest('.story-item')?.classList.add('active-card');
+
+        // Reacties laden bij eerste opening van een story-* element
+        if (id.startsWith('story-')) {
+            initReacties(id.slice(6)); // 'story-linskens' → 'linskens'
+        }
     } else {
         content.style.display = "none";
         element.innerHTML = '<i class="fas fa-chevron-down"></i> Lees het verhaal';
@@ -19,18 +25,13 @@ window.toggleStory = function(id, element) {
 
 // Universele Sortering
 window.sorteerVerhalen = function() {
-    // Zoek in alle mogelijke containers waar story-items in kunnen staan
-    const items = Array.from(document.querySelectorAll('.story-item')); 
+    const items = Array.from(document.querySelectorAll('.story-item'));
     if (items.length === 0) return;
 
-    // Pak de hoofdcontainer waar alles in moet komen te staan
     const mainContainer = document.getElementById('story-container');
     if (!mainContainer) return;
 
-    // Sorteer op basis van de data-votes attribuut
     items.sort((a, b) => (parseInt(b.getAttribute('data-votes')) || 0) - (parseInt(a.getAttribute('data-votes')) || 0));
-    
-    // Verplaats alle items naar de hoofdcontainer in de juiste volgorde
     items.forEach(item => mainContainer.appendChild(item));
 };
 

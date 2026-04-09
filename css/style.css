@@ -770,6 +770,144 @@ footer {
     }
 }
 
+/* ============================================
+   REACTIES SECTIE
+   ============================================ */
+
+.reacties-sectie {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 2px dashed #e8e8e8;
+}
+
+.reacties-header {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--psv-black);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.reacties-header i {
+    color: var(--psv-red);
+}
+
+/* Individuele reactie */
+.reactie-item {
+    background: #f9f9f9;
+    border-left: 3px solid var(--psv-red);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+}
+
+.reactie-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.reactie-meta strong {
+    font-size: 0.9rem;
+    color: var(--psv-black);
+}
+
+.reactie-datum {
+    font-size: 0.78rem;
+    color: #999;
+}
+
+.reactie-tekst {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.geen-reacties,
+.reacties-laden {
+    font-size: 0.85rem;
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 14px;
+    display: block;
+}
+
+/* Formulier */
+.reactie-form {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reactie-form-velden {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reactie-form input[type="text"],
+.reactie-form textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background: #fff;
+    transition: border-color 0.2s;
+    resize: vertical;
+}
+
+.reactie-form input[type="text"]:focus,
+.reactie-form textarea:focus {
+    outline: none;
+    border-color: var(--psv-red);
+}
+
+.reactie-submit-btn {
+    align-self: flex-start;
+    background: var(--psv-red);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.reactie-submit-btn:hover {
+    background: #b71c1c;
+}
+
+.reactie-submit-btn:active {
+    transform: scale(0.97);
+}
+
+.reactie-submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .reactie-submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* Media query voor mobiele verbeteringen */
 @media (max-width: 600px) {
     /* Zorg dat de header van een verhaal onder elkaar stapt */
