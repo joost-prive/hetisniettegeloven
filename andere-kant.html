@@ -13,57 +13,218 @@
 
     <header style="background-image: url('img/index/milaan.jpg');">
         <h1>De andere kant van de medaille</h1>
+        <p style="font-size: 1.2rem;">"Zonder de dalen smaken de pieken niet zo zoet"</p>
     </header>
 
     <div class="container grid-layout">
-        <main class="article-content">
+        <main class="main-content">
+
             <div class="section-box">
                 <div class="section-header">
                     <i class="fas fa-heart-broken"></i>
                     <span>Pijn hoort er ook bij</span>
                 </div>
-                <p>Echte clubliefde wordt niet alleen gevormd door de grote successen, maar misschien nog wel meer door de momenten van diepe teleurstelling. Want zonder de dalen, smaken de pieken niet zo zoet.</p>
-                
-                <h3>Milaan (2005): Zo dichtbij...</h3>
-                <p>De kopbal van Massimo Ambrosini in de blessuretijd. Het Philips Stadion was een kolkende vulkaan van hoop na de goals van Park en Cocu, maar die ene tegengoal deed alles instorten. Een van de meest onterechte uitschakelingen in de historie van de Champions League.</p>
-
-                <h3>Kaiserslautern & Het Muntje</h3>
-                <p>De geschiedenis van PSV kent meer van zulke bizarre momenten. Of het nu gaat om de uitschakeling tegen Kaiserslautern na de rellen of het legendarische 'muntje' tegen Benfica in 1975. Het zijn littekens op de ziel van elke supporter.</p>
-
-                <h3>Boerenkoolvoetbal</h3>
-                <p>En dan zijn er nog de grijze jaren, waarin we op koude woensdagavonden punten lieten liggen tegen de kleinere clubs. Maar juist die momenten maakten de remi van 2025 of de ontknoping van 2007 zo legendarisch.</p>
+                <p>Echte clubliefde wordt niet alleen gevormd door de grote successen, maar misschien nog wel meer door de momenten van diepe teleurstelling. Want zonder de dalen, smaken de pieken niet zo zoet. Hier bewaren we de verhalen die we liever zouden vergeten — maar die ons ook maakten tot wie we zijn als supporter.</p>
             </div>
 
-            <div class="cta-box">
-                <div class="cta-icon"><i class="fas fa-comment-dots"></i></div>
+            <div class="section-box">
+                <div class="section-header"><i class="fas fa-comments"></i> De momenten van pijn</div>
+                <div id="story-container">
+
+                    <!-- MILAAN 2005 -->
+                    <div class="story-item" data-votes="0" id="item-milaan2005">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-tegenstander">Champions League 2005</span>
+                                <h4 class="story-title">De kopbal van Ambrosini: "Zo dichtbij..."</h4>
+                                <p class="story-teaser">PSV was de Champions League-finale zo dichtbij. Eén kopbal in de blessuretijd vernietigde alles.</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-milaan2005', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-milaan2005" class="vote-btn-standard" onclick="voteAndSort('milaan2005')"><i class="fas fa-heart"></i> <span id="count-milaan2005">0</span> Herkenbaar!</button>
+                        </div>
+                        <div id="story-milaan2005" class="story-accordion-content">
+                            <h4 style="color: var(--psv-red); margin-top: 0;">De halve finale: PSV vs. AC Milan, mei 2005</h4>
+                            <p>Seizoen 2004/2005. PSV Eindhoven speelt een sprookjesachtig Champions League-seizoen. In de halve finale staat AC Milan — misschien wel de sterkste club van dat decennium — als tegenstander. Kaká, Shevchenko, Pirlo. Papier? Milan wint makkelijk. De werkelijkheid? Onthullend anders.</p>
+
+                            <h4 style="color: var(--psv-red);">Eerste pijl: 0-2 in San Siro</h4>
+                            <p>De heenwedstrijd in San Siro was al een straf. Milan won met 2-0: Shevchenko scoorde in de 45e minuut, Tomasson laat in de wedstrijd. PSV controleerde het balbezit maar werd op de counter afgestraft. Voor de terugwedstrijd was een winnende marge van twee goals nodig — thuis, in het Philips Stadion.</p>
+
+                            <h4 style="color: var(--psv-red);">Het Philips Stadion explodeert — 2-0 voor!</h4>
+                            <p>En PSV deed het. Park Ji-sung scoorde al in de 10e minuut — de Koreaan op zijn allerbest. Phillip Cocu voegde de tweede toe. Het Philips Stadion stond op zijn kop. PSV leidde 2-0, gelijk op aggregate. De Champions League-finale in Istanbul was voelbaar, tastbaar, bijna in handen.</p>
+
+                            <h4 style="color: var(--psv-red);">89e minuut. Massimo Ambrosini.</h4>
+                            <p>En toen sloeg het noodlot toe. In de 89e minuut kopte Massimo Ambrosini de bal in het net — een uitdoelpunt voor Milan. Daarmee stond het 2-2 op aggregate, maar Milan had twee uitdoelpunten gescoord tegen PSV's nul. Op de uitdoelpuntenregel ging Milan door naar de finale.</p>
+                            <p>Het Philips Stadion viel stil. Niet de stilte van concentratie — maar de verpletterende stilte van een gebroken hart. Eén kopbal van een man die normaal niet in de spotlights stond, had de Champions League-droom van PSV vernietigd. Milan won die finale in Istanbul ook nog — via strafschoppen tegen Liverpool, in een van de meest bijzondere finales ooit. PSV miste het allemaal, dankzij één kopbal in de 89e minuut.</p>
+
+                            <h4 style="color: var(--psv-red);">De onterechte uitschakeling</h4>
+                            <p>Verdiende PSV het om door te gaan? Absoluut. Was PSV thuis beter? Zonder twijfel. "Een van de meest onterechte uitschakelingen in de Champions League-historie", schreven commentatoren. Maar voetbal is wreed — en de uitdoelpuntenregel wrede nog meedogenlozer.</p>
+
+                            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin: 15px 0;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/9AcQufhayZU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius:8px; margin: 15px 0;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/aWrJ3McOXME" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+                            <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
+                                <strong>Bronnen:</strong>
+                                <a href="https://totaldutchfootball.com/2013/08/27/psv-vs-ac-milan-a-rivarly/?utm_source=perplexity" target="_blank">Total Dutch Football</a> |
+                                <a href="https://timesofmalta.com/article/milan-reach-final-with-late-ambrosini-header.91351?utm_source=perplexity" target="_blank">Times of Malta</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- VAN HOOIJDONK 2002 -->
+                    <div class="story-item" data-votes="0" id="item-hooijdonk2002">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-tegenstander">UEFA Cup 2002</span>
+                                <h4 class="story-title">Van Hooijdonk laat De Kuip ontploffen</h4>
+                                <p class="story-teaser">Een Feyenoorder die PSV de UEFA Cup-droom ontnam. In hun eigen stadion.</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-hooijdonk2002', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-hooijdonk2002" class="vote-btn-standard" onclick="voteAndSort('hooijdonk2002')"><i class="fas fa-heart"></i> <span id="count-hooijdonk2002">0</span> Herkenbaar!</button>
+                        </div>
+                        <div id="story-hooijdonk2002" class="story-accordion-content">
+                            <h4 style="color: var(--psv-red); margin-top: 0;">UEFA Cup 2002: derby in Europa</h4>
+                            <p>In het UEFA Cup-seizoen van 2002 kwamen PSV en Feyenoord elkaar tegen op het hoogste Europese niveau. Een derby in Europa — dat is altijd bijzonder. De eerste wedstrijd in Eindhoven eindigde 1-1. Alles open voor de return in De Kuip.</p>
+
+                            <h4 style="color: var(--psv-red);">Mark van Bommel geeft PSV de leiding</h4>
+                            <p>In de tweede wedstrijd in De Kuip leek PSV het te gaan redden. Mark van Bommel schoot in de 75e minuut raak met een harde afstandsknaller. 1-0 voor PSV — en op aggregate 2-1. PSV stond op weg naar de volgende ronde.</p>
+
+                            <h4 style="color: var(--psv-red);">Verlenging. Van Hooijdonk.</h4>
+                            <p>Maar Feyenoord herstelde zich. Pierre van Hooijdonk — een man voor het grote moment — kopte de gelijkmaker binnen in de extra tijd, nadat Jan Heintze de bal verloor. 1-1 na verlenging. Strafschoppen.</p>
+                            <p>PSV-speler Giorgi Gakhokidze miste zijn penalty. Van Hooijdonk scoorde de zijne. Feyenoord was door. PSV was uitgeschakeld. De Kuip explodeerde. Voor PSV-supporters: een avond die je liever vergeet, maar nooit vergeet. Want dit was niet gewoon verliezen — dit was uitgeschakeld worden door de rivaal, in hun eigen huis, via penalty's.</p>
+                            <p>Feyenoord won dat UEFA Cup-toernooi uiteindelijk ook. Ze versloegen Borussia Dortmund in de finale. PSV had dus bijna in het gezelschap van een Europese kampioen gezeten. Bijna.</p>
+
+                            <p style="font-size: 0.85rem; color: #777; border-top: 1px solid #eee; padding-top: 10px;">
+                                <strong>Bron:</strong>
+                                <a href="https://www.vi.nl/nieuws/uefa-cup-succes-toen-van-hooijdonk-de-kuip-liet-ontploffen-tegen-psv?utm_source=perplexity" target="_blank">VI.nl</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BENFICA MUNTJE -->
+                    <div class="story-item" data-votes="0" id="item-benfica1975">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-tegenstander">UEFA Cup 1975</span>
+                                <h4 class="story-title">Het Muntje: uitgeloot en uitgestoten</h4>
+                                <p class="story-teaser">Geen shoot-out. Geen herkansing. Gewoon een muntje. En het viel verkeerd.</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-benfica1975', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-benfica1975" class="vote-btn-standard" onclick="voteAndSort('benfica1975')"><i class="fas fa-heart"></i> <span id="count-benfica1975">0</span> Bizar!</button>
+                        </div>
+                        <div id="story-benfica1975" class="story-accordion-content">
+                            <h4 style="color: var(--psv-red); margin-top: 0;">Toen voetbal nog willekeur heette</h4>
+                            <p>In de jaren zeventig bestond er geen penalty-shootout in Europees voetbal. Als het na twee wedstrijden nog gelijk stond, en als er ook in de verlenging geen winnaar was, dan... werd er een munt opgegooid. Gewoon. Een muntje. Kop of munt. Thuis of uit. Volgend jaar of dit jaar.</p>
+
+                            <h4 style="color: var(--psv-red);">PSV vs. Benfica (1975)</h4>
+                            <p>PSV plaatste zich voor de UEFA Cup en stond tegenover Benfica — een van de grote Europese clubs van die tijd. Na twee gelijkwaardige wedstrijden moest het lot beslissen. Het muntje werd opgegooid. En het viel verkeerd. PSV was uitgeschakeld. Niet door slechter te voetballen, niet door een betere tegenstander, maar door een stuk metaal dat de verkeerde kant op rolde.</p>
+                            <p>Voor de supporters die erbij waren: een moment dat je je leven lang bijblijft. Want dit soort uitschakeling, zo willekeurig en zo onbegrijpelijk, laat een litteken achter dat bij geen enkele andere manier van verliezen bestaat.</p>
+                            <p>Een jaar later, in 1978, sloeg PSV terug op Europees niveau — toen Magdeburg werd overlopen in de UEFA Cup. Maar het muntje van 1975 vergeet je nooit meer.</p>
+                        </div>
+                    </div>
+
+                    <!-- KAISERSLAUTERN -->
+                    <div class="story-item" data-votes="0" id="item-kaiserslautern">
+                        <div class="story-header-row">
+                            <div class="story-content-left">
+                                <span class="story-tag tag-tegenstander">Champions League</span>
+                                <h4 class="story-title">Kaiserslautern: de rellen en de uitschakeling</h4>
+                                <p class="story-teaser">PSV ging ver in de CL. Tot Kaiserslautern de boel liet ontsporen.</p>
+                                <div class="story-action-link dropdown-trigger" onclick="toggleStory('story-kaiserslautern', this)">
+                                    <i class="fas fa-chevron-down"></i> Lees het volledige verhaal
+                                </div>
+                            </div>
+                            <button id="btn-kaiserslautern" class="vote-btn-standard" onclick="voteAndSort('kaiserslautern')"><i class="fas fa-heart"></i> <span id="count-kaiserslautern">0</span> Bizar!</button>
+                        </div>
+                        <div id="story-kaiserslautern" class="story-accordion-content">
+                            <h4 style="color: var(--psv-red); margin-top: 0;">De PSV-jaren in de Champions League</h4>
+                            <p>De geschiedenis van PSV in de Champions League kent veel mooie momenten. Maar er zijn ook de momenten die je liever wegdrukt. De avond dat PSV werd uitgeschakeld door het roerige Kaiserslautern staat in het collectieve geheugen van elke PSV-supporter die er oud genoeg voor is.</p>
+                            <p>Rellen op de tribunes, een wedstrijd die ontspoorde voordat hij goed en wel begonnen was. PSV was uitgeschakeld — niet alleen door het voetbal op het veld, maar ook door de chaos eromheen. Een avond die als een litteken in de geschiedenis van de club staat: PSV kon verder komen op Europees niveau. Tot het moment dat het misging.</p>
+                            <p>De pijn van zulke momenten is anders dan de pijn van een gewone verliespartij. Het is de pijn van de vraag "wat als?" — van de wetenschap dat het anders had kunnen lopen als de omstandigheden anders waren geweest. Dat draag je als supporter soms jarenlang mee.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cta-box" style="margin-top:30px; display: flex; align-items: center; gap: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                <div class="cta-icon" style="font-size: 2rem; color: var(--psv-red);"><i class="fas fa-comment-dots"></i></div>
                 <div>
-                    <h4>Deel jouw 'pijn'</h4>
-                    <p>Welk moment deed jou het meeste pijn als supporter? Laat het ons weten bij de oproep onderaan de homepage.</p>
+                    <h4 style="margin: 0; color: var(--psv-black);">Welk moment deed jou het meest pijn?</h4>
+                    <p style="margin: 5px 0 0; color: #666;">Welke teleurstelling vergeet jij nooit meer? De kopbal van Ambrosini? Een ander moment dat jou als supporter heeft gevormd? <a href="index.html#meedoen" style="color:var(--psv-red); font-weight:bold; text-decoration: none;">Deel hier jouw herinnering.</a></p>
                 </div>
             </div>
         </main>
 
         <aside class="sidebar">
-            <h3 style="margin-top:0;">Andere Momenten</h3>
-            <a href="2007.html" class="story-card-compact">
-                <div class="story-thumb" style="background-image: url('img/index/2007.png');"></div>
-                <div>
-                    <strong>2007</strong>
-                    <div class="quote-preview">Het is niet te geloven!</div>
-                </div>
-            </a>
-            <a href="dying-seconds.html" class="story-card-compact">
-                <div class="story-thumb" style="background-image: url('img/index/saibari.jpg');"></div>
-                <div>
-                    <strong>Dying Seconds</strong>
-                    <div class="quote-preview">Van hel naar hemel...</div>
-                </div>
-            </a>
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-list-ol"></i> De pijnlijkste momenten</div>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-heartbeat" style="color:#e53935; margin-top:3px;"></i>
+                        <span><strong>2005 — Milaan:</strong> Ambrosini's kopbal in de blessuretijd beëindigde PSV's Champions League-droom</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-heartbeat" style="color:#e53935; margin-top:3px;"></i>
+                        <span><strong>2002 — UEFA Cup:</strong> Van Hooijdonk laat De Kuip ontploffen ten koste van PSV</span>
+                    </li>
+                    <li style="margin-bottom:12px; font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-heartbeat" style="color:#e53935; margin-top:3px;"></i>
+                        <span><strong>1975 — Het Muntje:</strong> Uitgeloot door Benfica. Niet door slechter voetbal — door een stuk metaal</span>
+                    </li>
+                    <li style="font-size:0.9rem; display:flex; gap:10px;">
+                        <i class="fas fa-heartbeat" style="color:#e53935; margin-top:3px;"></i>
+                        <span><strong>Kaiserslautern:</strong> Rellen en uitschakeling op het moment dat het er echt toe deed</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-box article-mode">
+                <div class="section-header"><i class="fas fa-link"></i> Andere Momenten</div>
+                <a href="2007.html" class="story-card-compact">
+                    <div class="story-thumb" style="background-image: url('img/index/2007.png');"></div>
+                    <div>
+                        <strong>2007</strong>
+                        <div class="quote-preview">Het is niet te geloven!</div>
+                    </div>
+                </a>
+                <a href="dying-seconds.html" class="story-card-compact">
+                    <div class="story-thumb" style="background-image: url('img/index/saibari.jpg');"></div>
+                    <div>
+                        <strong>Dying Seconds</strong>
+                        <div class="quote-preview">Van hel naar hemel...</div>
+                    </div>
+                </a>
+            </div>
         </aside>
     </div>
 
     <div id="footer-container"></div>
 
     <script src="js/nav.js"></script>
+    <script type="module">
+        import './js/main.js';
+        import { laadStemmen } from './js/voting.js';
+
+        const storyIds = ['milaan2005', 'hooijdonk2002', 'benfica1975', 'kaiserslautern'];
+
+        window.addEventListener('load', async () => {
+            for (const id of storyIds) {
+                await laadStemmen(id);
+                const count = parseInt(document.getElementById('count-' + id)?.innerText) || 0;
+                document.getElementById('item-' + id)?.setAttribute('data-votes', count);
+            }
+            if (typeof sorteerVerhalen === 'function') sorteerVerhalen();
+        });
+    </script>
 </body>
 </html>
